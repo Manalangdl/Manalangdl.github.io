@@ -2,3 +2,11 @@ p {
     text-align: center;
     color: pink;
 }
+
+#header {
+    color: lightblue;
+}
+.about {
+    text-align: center;
+    color:rgb(126, 79, 245);
+}
