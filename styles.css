@@ -1,6 +1,10 @@
 p {
     text-align: center;
-    color: pink;
+    color: rgb(255, 165, 235);
+}
+body{
+    background: rgb(255, 208, 235);
+    font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
 #header {
@@ -9,4 +13,14 @@ p {
 .about {
     text-align: center;
     color:rgb(126, 79, 245);
+}
+
+.left {
+    text-align: left;
+}
+.green {
+    color: green;
+}
+.attention {
+    font-weight:bold;
 }
