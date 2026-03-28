@@ -30,4 +30,18 @@ body{
     background: rgb(235, 235, 235);
 }
 
-.
+.project img{
+    width: 50vw;
+    height: 100vh;
+    margin: 10px;
+    border: 2px solid rgb(212, 167, 243); 
+    display: block;
+    margin: auto;
+
+}
+
+#affinity {
+    width: 500px;
+    height: 300px;
+
+}
