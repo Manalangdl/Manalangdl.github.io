@@ -1,85 +1,123 @@
 <!DOCTYPE html>
-<html Lang="en">
-    <head>
-        <meta charset="UTF=8">
-        <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
-        <title>CSCE190: Lindsay Manalang</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <!-- comment -->
+<html lang="en">
 
-    <body>
-        <h1>Lindsay Manalang</h1>
-        <div class="about">
-            <h2>About me:</h2>
-            <p>Mission Statement Here</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Template 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Lindsay Manalang's Portfolio Website</h1>
+  </header>
+  <nav>
+    <button class="tab-btn active" onclick="openTab(event, 'about')">About Me</button>
+    <button class="tab-btn" onclick="openTab(event, 'skills')">Skills</button>
+    <button class="tab-btn" onclick="openTab(event, 'projects')">Highlighted Projects</button>
+    <button class="tab-btn" onclick="openTab(event, 'contact')">Contact me!</button>
+  </nav>
+
+  <main>
+    <section id="about" class="active">
+      <h2>About Me</h2>
+      <div class="profile-layout">
+        <div class="img-frame">
+            <img class="pfp" src="images/headshot.jpg" alt="Profile Picture">
         </div>
-
-        <div class="skills left green attention">
-            <h2>Skills:</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-            </ul>
-        </div>
-
-        <div class="projects">
-            <h2>Projects:</h2>
-
-            <!-- PROBLEM STATEMENT ASSIGNMENT -->
-            <section class="project">
-                <a href="Files/statement.pdf"><h3>Problem Statement</h3></a>
-
-                <a href="Files/statement.pdf"><img class="img" src="Images/problemstatement.png"></a>
-
-                <p>Uncoordinated roommates make the living environment bad. </p>
-            </section>
         
+        <div>
+          <p>Hello! My name is Lindsay Manalang, a current sophomore at University of South Carolina. I am a Computer Information Systems 
+            major because I want to learn code while also planning to build my own business. I love diving into the complexities of cybersecurity
+            and also hope to use my passion for photography to integrate it in my web development future. My personal mission is to better understand 
+            programming and systems and work with design to further my knowledge in cybersecurity. I want to defend those that are vulnerable as well
+            as build creativity through web development.
+          </p>
+          <a href="files/resume.pdf" target="_blank">Check out my resume for more information!</a>
+          <!-- _blank opens in a new tab -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p><strong>Coding Proficiencies:</strong> Skill 1, Skill 2, Skill 3, Skill 4</p>
+      <p><strong>Additional Skills:</strong> Skill 5, Skill 6, Skill 7</p>
+    </section>
+
+    <section id="projects">
+      <h2>Highlighted Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3><a href="#">[Project Title 1]</a></h3>
+          <a href="#"><img src="files/project1.png" alt="Project 1"></a>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
         </div>
 
-        <div class="contact">
-            <h2>Contact:</h2>
-            <p>manalang@email.sc.edu</p>
+        <div class="project-card">
+          <h3><a href="#">[Project Title 2]</a></h3>
+          <a href="#"><img src="files/project2.png" alt="Project 2"></a>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
         </div>
+        
+        <div class="project-card">
+          <h3><a href="#">[Project Title 2]</a></h3>
+          <a href="#"><img src="files/project2.png" alt="Project 2"></a>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
+        </div>
+        
+        <div class="project-card">
+          <h3><a href="#">[Project Title 2]</a></h3>
+          <a href="#"><img src="files/project2.png" alt="Project 2"></a>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
+        </div>
+        
+        <div class="project-card">
+          <h3><a href="#">[Project Title 2]</a></h3>
+          <a href="#"><img src="files/project2.png" alt="Project 2"></a>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
+        </div>
+        
+        <div class="project-card">
+          <h3><a href="#">[Project Title 2]</a></h3>
+          <a href="#"><img src="files/project2.png" alt="Project 2"></a>
+          <p>Brief description of what the project is, the problem it solves, and the steps taken.</p>
+        </div>
+        
+      </div>
+    </section>
 
-        <!-- Sketches Assignment -->
-        <section class="project">
-            <a href="Files/sketches.pdf"><h3>Sketches</h3></a>
-            <video height="240" width="320" controls>
-                <source src="Files/sketches.mp4" type="video/mp4">
-            </video>
-            <p>
-                These are rough sketches of how our app will look like.
-            </p>
-        </section>
+    <section id="contact">
+      <h2>Contact me!</h2>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/lindsaymanalang/" target="_blank">LinkedIn: lindsaymanalang </a>
+        <a href="https://github.com/Manalangdl/Manalangdl.github.io" target="_blank">Github: Manalangdl </a>
+        <a href="mailto:lindsaymana13@gmail.com" target="_blank">Email: lindsaymana13@gmail.com</a>
+      </div>
+    </section>
+  </main>
 
-        <!-- Storyboard Assignment -->
-        <section class="project">
-            <a href="Files/storyboards.pdf"><h3>Storyboard</h3></a>
-            <a href="Files/storyboards.pdf"><img src="Images/Sage_storyboard.png" ></a>
-            <p>
-                This is a storyline of how our personas may experience the need for our Behaive app.
-            </p>
-        </section>
+  <script>
+    // JavaScript to handle the tab switching
+    function openTab(evt, tabName) {
+      let i, sections, tablinks;
 
-         <!--Persona Assignment-->
-        <section class="project">
-            <a href="Files/Personas.pdf"><h3>Personas</h3></a>
-            <a href="Files/Personas.pdf"><img src="Images/personas.png" ></a>
-            <p>
-                These are two personas my group created to show our target audience of our app
-            </p>
-        </section>
+      sections = document.getElementsByTagName("section");
+      for (i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("active");
+      }
 
+      tablinks = document.getElementsByClassName("tab-btn");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
 
-        <!-- AFFINITY DIAGRAM ASSIGNMENT -->
-         <section class="project">
-            <a href="files/Affinity_Diagram.pdf"><h3>Affinity Diagram</h3></a>
-            <a href="files/Affinity_Diagram.pdf"><img id="affinity" src="Images/affinity.png" ></a>
-         <p>
-        Our group came up with different perspectives, design, and issues to address prior to creating our app
-         </p>
-        </section>
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+</body>
 
-    </body>
 </html>
