@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: #2c3e50;
+  background: rgba(253, 149, 201, 0.784);
   color: white;
   padding: 1.5rem 0;
   text-align: center;
@@ -16,15 +16,37 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  background: #34495e;
+  /* background: rgba(246, 107, 181, 0.784); */
+
+  background: linear-gradient(180deg, rgba(252, 115, 188, 0.784) 65%,
+                                       rgba(248, 170, 212, 0.6));
   padding: 0.5rem;
   flex-wrap: wrap;
+}
+
+header {
+
+  position: relative;
+}
+
+header img {
+
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: none !important;
+}
+
+#panda {
+
+  bottom: -4px;
+  right: 1rem;
 }
 
 nav button {
   background: none;
   border: none;
-  color: white;
+  color: rgba(64, 64, 64, 0.749);
   padding: 12px 24px;
   cursor: pointer;
   font-size: 16px;
@@ -35,7 +57,7 @@ nav button {
 
 nav button:hover,
 nav button.active {
-  background: #1abc9c;
+  background: #8a70ea91;
   font-weight: bold;
 }
 
@@ -70,7 +92,7 @@ section.active {
 }
 
 h2 {
-  border-bottom: 2px solid #1abc9c;
+  border-bottom: 2px solid #853893;
   padding-bottom: 10px;
   margin-top: 0;
 }
@@ -88,6 +110,11 @@ h2 {
   background: #eee;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.contact-links a:hover {
+
+  text-decoration: underline;
 }
 
 .pfp {
