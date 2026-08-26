@@ -6,15 +6,7 @@ body{
     
 }
 
-/* CSCE242 Title */
-h1{
-    color:#5fada2;
-}
 
-/* made the headings the same color */
-h2, h3{
-    color:#696868;
-}
 
 #name{
     font-size: 20px;
@@ -36,6 +28,25 @@ header{
 
 }
 
+/* removing underline from links */
+a{
+    text-decoration: none;
+    color:#cd6688;
+}
+
 /* Navigation */
 
+
+
 /* Typography */
+
+h1{
+    /* CSCE242 Title */
+    color:#5fada2;
+}
+
+
+h2, h3{
+    /* made the headings the same color */
+    color:#696868;
+}
