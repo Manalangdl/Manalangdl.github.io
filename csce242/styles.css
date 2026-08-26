@@ -1,7 +1,7 @@
 /* Structural */
 body{
     /* changing default font page */
-    margin-top: 0px;
+    margin-top: 0px; /* makes the website more flush */
     font-family: Helvetica, Arial, sans-serif;
     background-color: #FFDBDB;
     
@@ -28,6 +28,7 @@ header{
     padding: 30px 50px;
     height: 100vh;
 
+    /* borders for both side of div */
     border-left:6px solid #31a2b1;
     border-right:6px solid #31a2b1;
 
@@ -40,14 +41,13 @@ header{
 #copyright{
     color: #31a2b1;
 
-   
 }
 
-/* hyperlink */
-a{
-    text-decoration: none;
-    color:#cd6688;
+li {
+    margin-bottom: 8px;
 }
+
+
 
 /* Navigation */
 
@@ -64,4 +64,10 @@ h1{
 h2, h3{
     /* made the headings the same color */
     color:#696868;
+}
+
+/* hyperlink */
+a{
+    text-decoration: none;
+    color:#cd6688;
 }
