@@ -2,14 +2,24 @@
 body{
     /* changing default font page */
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #F9F0DF;
+    background-color: #FFDBDB;
     
 }
 
-/* made the headings the same color */
-header, h2, h3{
-    color:#3a3a3a;
+/* CSCE242 Title */
+h1{
+    color:#5fada2;
 }
+
+/* made the headings the same color */
+h2, h3{
+    color:#696868;
+}
+
+#name{
+    font-size: 20px;
+}
+
 
 /* alignment for the h1,h2 */
 header{
@@ -18,9 +28,11 @@ header{
 
 /* div id */
 #container{
-    background-color: #FFDBDB;
-    width: 80%;
+    background-color: #fff9ed;
+    width: 75%;
     margin: auto;
+    padding: 30px 50px;
+    height: 100vh;
 
 }
 
