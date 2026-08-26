@@ -1,8 +1,29 @@
 /* Structural */
 body{
     /* changing default font page */
-    font-family: Helvetica, Arial, sans-serif
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #F9F0DF;
+    
 }
+
+/* made the headings the same color */
+header, h2, h3{
+    color:#3a3a3a;
+}
+
+/* alignment for the h1,h2 */
+header{
+    text-align: center;
+}
+
+/* div id */
+#container{
+    background-color: #FFDBDB;
+    width: 80%;
+    margin: auto;
+
+}
+
 /* Navigation */
 
 /* Typography */
