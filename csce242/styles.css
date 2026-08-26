@@ -1,6 +1,7 @@
 /* Structural */
 body{
     /* changing default font page */
+    margin-top: 0px;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #FFDBDB;
     
@@ -23,12 +24,26 @@ header{
     background-color: #fff9ed;
     width: 75%;
     margin: auto;
+    margin-top: 0;
     padding: 30px 50px;
     height: 100vh;
 
+    border-left:6px solid #31a2b1;
+    border-right:6px solid #31a2b1;
+
 }
 
-/* removing underline from links */
+#description{
+    color:#8e8e8e
+}
+
+#copyright{
+    color: #31a2b1;
+
+   
+}
+
+/* hyperlink */
 a{
     text-decoration: none;
     color:#cd6688;
