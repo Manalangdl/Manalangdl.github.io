@@ -8,21 +8,30 @@ body{
 
 }
 
+/* changed the div so the background img doesn't take whole screen */
 #container{
     margin: auto;
     width: 85%;
-    background-color: beige;
+    background-color: #ECEAD7;
     padding: 8px 16px;
 }
 
+/* adjusted img sizing */
 #imgtitle{
     height: 50%;
     width: 50%;
+    margin-left: 25%;
 }
 
 #imgperfumeline{
     height: 50%;
     width: 50%;
+    margin-left: 25%;
+}
+
+#maintitle{
+    text-align: center;
+    font-size: 200%;
 }
 
 
