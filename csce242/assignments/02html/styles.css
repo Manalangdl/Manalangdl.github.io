@@ -12,12 +12,12 @@ body{
 #container{
     margin: auto;
     width: 85%;
-    background-color: #ECEAD7;
+    background-color: #F2ECE2;
     padding: 8px 16px;
 }
 
 /* adjusted img sizing & centered */
-#imgtitle{
+#imgmain{
     height: 50%;
     width: 50%;
     margin-left: 25%;
@@ -52,6 +52,7 @@ p{
 }
 
 
+/* centering and recoloring */
 table {
 
     border: 4px solid #abf086ea;
@@ -82,3 +83,17 @@ td {
 /* NAVIGATION */
 
 /* TYPOGRAPHY */
+
+#maintitle{
+    color: #5C1122;
+}
+
+h2{
+    color:#B86401;
+}
+
+p{
+    color:#3C1316;
+}
+
+
