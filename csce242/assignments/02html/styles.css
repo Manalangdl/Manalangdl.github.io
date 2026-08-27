@@ -1,9 +1,28 @@
 /* STRUCTURAL */
 
 body{
+    /* more appealing font */
     font-family: Helvetica, Arial, sans-serif;
     background:url(images/gucci-floral.jpg);
     background-size: cover;
+
+}
+
+#container{
+    margin: auto;
+    width: 85%;
+    background-color: beige;
+    padding: 8px 16px;
+}
+
+#imgtitle{
+    height: 50%;
+    width: 50%;
+}
+
+#imgperfumeline{
+    height: 50%;
+    width: 50%;
 }
 
 
