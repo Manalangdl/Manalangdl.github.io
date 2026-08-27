@@ -42,6 +42,11 @@ body{
     text-decoration: none; /* Removes underline */
 }
 
+/* images */
+img{
+    max-width:100%; /* to not make it bigger than container*/
+}
+
 /* Typography */
 #main-header h1{
     text-align:center;
