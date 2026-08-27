@@ -79,6 +79,10 @@ td {
     background-color: #ffd6e5e5;
 }
 
+img{
+    border: 4px solid #8975A2;
+    padding: 2px;
+}
 
 /* NAVIGATION */
 
@@ -95,5 +99,3 @@ h2{
 p{
     color:#3C1316;
 }
-
-
