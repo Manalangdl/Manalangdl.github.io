@@ -34,8 +34,11 @@ header{
 /* overall largest div */
 .assignments{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+    height: auto;
+    gap: 35px;
 }
 
 /* header inside assignment div */
@@ -67,7 +70,7 @@ header{
     margin: auto;
     margin-top: 0;
     padding: 30px 50px;
-    height: 100vh;
+    height: auto;
 
     /* borders for both side of div */
     border-left:6px solid #31a2b1;
@@ -110,6 +113,9 @@ h2, h3{
 /* hyperlink */
 a{
     text-decoration: none;
+}
+
+.assignments h3{
     color:#cd6688;
 }
 
