@@ -31,21 +31,26 @@ header{
     border: 2px solid pink;
 } */
 
+/* overall largest div */
 .assignments{
     display:flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
+/* header inside assignment div */
 .assignments h3{
     font-weight: 500;
     text-align: center;
 }
 
+/* individual div */
 .assignment-box{
     width:350px;
     height:300px;
     padding: 10px;
+    background-color: rgb(255, 217, 223) ;
+    border-radius: 16px;
 }
 
 .assignment-img{
@@ -89,7 +94,7 @@ li {
 
 
 
-/* Typography */
+/* TYPOGRAPHY */
 
 h1{
     /* CSCE242 Title */
@@ -106,5 +111,9 @@ h2, h3{
 a{
     text-decoration: none;
     color:#cd6688;
+}
+
+.assignments p{
+    color:#808080
 }
 
