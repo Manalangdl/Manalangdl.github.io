@@ -1,4 +1,4 @@
-/* Structural */
+/* STRUCTURAL */
 body{
     /* changing default font page */
     margin-top: 0px; /* makes the website more flush */
@@ -19,12 +19,12 @@ header{
 }
 
 /* aligning the assignment title */
-#assigntitle{
+.title{
     text-align: center;
 }
 
 
-/* ASSIGNMENTS */
+/* ASSIGNMENTS/PROJECTS */
 /* using class for the div */
 /* .test {
 
@@ -32,7 +32,7 @@ header{
 } */
 
 /* overall largest div */
-.assignments{
+.assignments, .projects{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -113,6 +113,7 @@ h2, h3{
 /* hyperlink */
 a{
     text-decoration: none;
+    color:#cd6688;
 }
 
 .assignments h3{
