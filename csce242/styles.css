@@ -19,6 +19,11 @@ header{
     text-align: center;
 }
 
+/* moving the assignment title */
+#assigntitle{
+    text-align: center;
+}
+
 /* div id */
 #container{
     background-color: #fff9ed;
