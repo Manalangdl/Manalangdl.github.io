@@ -124,3 +124,13 @@ a{
     color:#808080
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 500px){
+    .assignments, .projects{
+        flex-direction: column;
+    }
+
+    .container{
+        width: 90%;
+    }
+}
