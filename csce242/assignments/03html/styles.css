@@ -68,7 +68,7 @@ aside li{
 /* the two long rows */
 .long-row{
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     margin-top: 8px;
 }
 
@@ -165,5 +165,17 @@ footer{
 @media (max-width: 500px){
     .flex{
         flex-direction: column;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    nav ul li{
+        width: 100%;
+    }
+
+    body{
+        padding: 0;
     }
 }
