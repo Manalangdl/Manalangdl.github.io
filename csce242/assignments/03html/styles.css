@@ -6,6 +6,7 @@ ul{
     padding-left: 0;
 }
 
+/* nav styles */
 nav ul{
     width: 100%;
 }
@@ -20,6 +21,43 @@ nav ul li{
     justify-content: center;
 }
 
+/* row 1 styles */
+aside{
+    height: 425px;
+    width: 250px;
+    border: 1px solid red;
+    padding: 0 4px;
+}
+
+aside ul{
+    width: 100%;
+    gap: 2px;
+}
+
+aside li{
+    border: 1px solid red;
+    width: 100%;
+    padding: 4px 0;
+}
+
+.row-1-box{
+    height: 425px;
+    width: 500px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.row-1-box h3{
+    height: 25px;
+    width: 100%;
+    border: 1px solid blue;
+    margin: 0;
+}
+
+.row-1-box img{
+    height: 400px;
+    width: 500px;
+}
 
 body{
     padding: 0px 5vw;
@@ -31,6 +69,7 @@ body{
     min-height: 100vh;
 }
 
+/* flex classes */
 .flex{
     display: flex;
     align-items: center;
@@ -42,6 +81,10 @@ body{
 
 .start{
     justify-content: start;
+}
+
+.center{
+    justify-content: center;
 }
 
 .column{
