@@ -52,7 +52,7 @@ header{
 /* individual div */
 .assignment-box{
     width:310px;
-    height:280px;
+    min-height:280px;
     padding: 8px;
     background-color: rgb(255, 217, 223) ;
     border-radius: 16px;
