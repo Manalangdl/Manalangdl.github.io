@@ -2,7 +2,24 @@
 /* STRUCTURAL */
 ul{
     list-style: none;
+    text-indent: none;
+    padding-left: 0;
 }
+
+nav ul{
+    width: 100%;
+}
+
+nav ul li{
+    width: 25%;
+    height: 30px;
+    border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 body{
     padding: 0px 5vw;
@@ -31,6 +48,9 @@ body{
     flex-direction: column;
 }
 
+.around{
+    justify-content: space-around;
+}
 /* NAVIGATION */
 
 /* TYPOGRAPHY */
