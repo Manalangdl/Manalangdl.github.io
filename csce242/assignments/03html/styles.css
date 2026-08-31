@@ -4,8 +4,39 @@ ul{
     list-style: none;
 }
 
+body{
+    padding: 0px 5vw;
+    text-align: center;
+}
+
+#container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
+.start{
+    justify-content: start;
+}
+
+.column{
+    flex-direction: column;
+}
+
 /* NAVIGATION */
 
 /* TYPOGRAPHY */
+a{
+    text-decoration: none;
+    color:green;
+}
 
 /* MEDIA QUERIES */
