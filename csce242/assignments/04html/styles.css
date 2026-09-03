@@ -1,0 +1,30 @@
+/* STRUCTURAL */
+
+
+/* FOOTER LINKS */
+
+
+#footer-links{
+    background: maroon;
+    color:white;
+}
+
+#footer-links a{
+    color:white;
+}
+
+/* FOOTER COPY */
+#footer-copy{
+    background:black;
+    color:white;
+}
+
+#footer-copy a{
+    color:white;
+}
+
+/* NAVIGATION */
+
+/* TYPORGRAPHY */
+
+/* MEDIA QUERIES */
