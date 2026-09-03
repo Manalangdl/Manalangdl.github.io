@@ -9,10 +9,51 @@ body{
     margin:auto;
 }
 
+/* HEADER */
 #main-header{
     background-color: bisque;
+    position: relative;
+    padding-top: 3%;
 }
 
+#logo{
+    /* relative positioned based on its natural placement| top-left move | takes up space on screen */
+    /* absolute goes top-left of screen and doesn't take up space in screen (compresses) */
+    position: absolute;
+    left:1em;
+    top:1em;
+}
+
+/* Hero */
+#hero{
+    position: relative;
+}
+
+#hero-description{
+    position:absolute;
+    top:60%;
+    left:5%;
+    background:rgba(255, 255, 255, .8);
+    padding: 20px;
+    font-size:1.5em;
+}
+
+.hero-arrow{
+    position:absolute;
+    top:22%;
+    font-size:8em;
+    color:white;
+    text-decoration: none;
+}
+
+#hero-arrow-right{
+    right:0;
+}
+#hero-arrow-left{
+    left:0;
+}
+
+/* SIDEBAR */
 #sidebar, #info{
     padding:5px;
 }
@@ -26,7 +67,7 @@ body{
 }
 
 /* Navigation */
-#main-nav ul, #quick-links{
+#main-nav ul, #quick-links, #login-nav ul{
     list-style-type: none;
     padding-left: 0;
 }
@@ -37,9 +78,31 @@ body{
     border-bottom:1px solid white;
 }
 
-#main-nav a{
+#main-nav a, #login-nav a{
     color:white;
     text-decoration: none; /* Removes underline */
+}
+
+/* login nav */
+
+#login-nav{
+    position:absolute;
+    top:1%;
+    right:1%;
+}
+
+#login-nav a{
+    color:#c06c84;
+    font-size:1.5em;
+}
+
+#login-nav li{
+    display:inline-block;
+}
+
+#login-nav li:not(:last-child):not(:first-child)::after{
+    content: " | ";
+    color:#c06c84;
 }
 
 /* images */
