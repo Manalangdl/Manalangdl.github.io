@@ -1,5 +1,9 @@
 /* STRUCTURAL */
-
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 /* FOOTER LINKS */
 
@@ -24,7 +28,13 @@
 }
 
 /* NAVIGATION */
+#top-nav{
+    background: black;
+}
 
 /* TYPORGRAPHY */
+.white-text{
+    color:white;
+}
 
 /* MEDIA QUERIES */
