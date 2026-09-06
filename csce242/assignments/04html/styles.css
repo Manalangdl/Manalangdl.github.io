@@ -104,6 +104,10 @@
     right: clamp(5%, 5vw, 10%);
 }
 
+.smaller-width{
+    width: 450px !important; /* -> 205px || 90% */
+}
+
 /* padding on very top of the page */
 #top-nav{
     padding-top: 10px;
