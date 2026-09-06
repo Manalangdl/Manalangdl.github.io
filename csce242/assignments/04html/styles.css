@@ -8,11 +8,16 @@
     border: 0;
 }
 
+/* color bgs */
+.bg-garnet{
+    background-color: #750009;
+}
+
+
 /* default flex styling */
 .flex{
     display:flex;
     align-items: center;
-    /* justify-content: ; */
 }
 
 /* make a container to adjust the margins and center */
@@ -27,6 +32,10 @@
     justify-content: space-between;
 }
 
+.end{
+    justify-content: end;;
+}
+
 .full-w{
     width: 100%;
 }
@@ -34,12 +43,31 @@
 /* padding on very top of the page */
 #top-nav{
     padding-top: 10px;
+    padding-bottom: 5px;
+    height: 100px;
+}
+
+#title-box{
+    padding-top: 10px;
 }
 
 /* the white links at the very top of the website */
 #mini-links{
-    gap: 0.65rem;
     list-style: none;
+}
+
+#mini-links li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid white;
+}
+
+.no-border{
+    border: none !important;
+}
+
+.no-padding-left{
+    padding-left: 0px !important;
 }
 
 /* fixing the iamge sizing  */
@@ -76,6 +104,16 @@
     background: black;
 }
 
+#red-nav{
+    height: 50px;
+}
+
+#red-nav button{
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: bold;
+}
+
 /* TYPORGRAPHY */
 .white-text{
     color:white;
@@ -84,6 +122,18 @@
 a{
     color: white;
     text-decoration: none;
+}
+
+.fs-10{
+    font-size: 10px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+.fs-18{
+    font-size: 18px;
 }
 
 /* MEDIA QUERIES */
