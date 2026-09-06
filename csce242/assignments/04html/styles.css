@@ -1,5 +1,10 @@
 /* STRUCTURAL */
 
+/* testing/needs work */
+.testing{
+    border: 2px solid green;
+}
+
 /* fixes the border issue */
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -13,6 +18,9 @@
     background-color: #750009;
 }
 
+.bg-white{
+    background-color: white;
+}
 
 /* default flex styling */
 .flex{
@@ -30,6 +38,10 @@
 /* space between for the header and footer */
 .space-between{
     justify-content: space-between;
+}
+
+.center{
+    justify-content: center;
 }
 
 .end{
@@ -76,6 +88,18 @@
     width:16vw;
 }
 
+/* main page ids */
+#hero-img{
+    height: 600px;
+}
+
+#summ{
+    width: 50%;
+    line-height: 1.8;
+    padding: 40px 0;
+    text-wrap-mode: initial;
+    text-wrap-style: pretty;
+}
 
 /* FOOTER LINKS */
 
@@ -132,8 +156,16 @@ a{
     font-size: 32px;
 }
 
+.fs-22{
+    font-size: 22px;
+}
+
 .fs-18{
     font-size: 18px;
+}
+
+.fw-bold{
+    font-weight: bold;
 }
 
 /* MEDIA QUERIES */
