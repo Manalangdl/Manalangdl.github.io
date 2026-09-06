@@ -178,6 +178,31 @@
     line-height: 1.8;
 }
 
+/* cards  */
+#cards{
+    padding: 40px 80px; /* -> 32px 0 */
+    border: 2px solid blue;
+    gap: 2.25rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 52.5vh;
+    flex-grow: 1;
+    max-width: 40vh;
+    padding-bottom: 10px;
+}
+
+.card-img{
+
+    height: 40vh;
+    width: 40vh;
+}
+
+.card p {
+    width: 90%;
+}
+
 .main-btn{
 
     padding: 12px 24px !important;
@@ -266,8 +291,16 @@ a{
     font-weight: bold;
 }
 
+.fw-500{
+    font-weight: 500;
+}
+
 .black-text{
     color: black;
+}
+
+.garnet-text{
+    color: #750009;
 }
 
 /* MEDIA QUERIES */
