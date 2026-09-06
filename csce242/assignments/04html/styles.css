@@ -27,10 +27,15 @@
     background-color: black;
 }
 
+.bg-grey{
+    background-color: #EDEDED;
+}
+
 /* default flex styling */
 .flex{
     display:flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .column{
@@ -67,6 +72,13 @@
 
 .full-w{
     width: 100%;
+}
+
+.w-1360{
+    max-width: 1360px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .h-60{
@@ -107,6 +119,45 @@
 .smaller-width{
     width: 450px !important; /* -> 205px || 90% */
 }
+
+
+.card{
+    height: 52.5vh;
+    flex-grow: 1;
+    max-width: 40vh;
+    padding-bottom: 10px;
+}
+
+.card-img{
+
+    height: 40vh;
+    width: 40vh;
+}
+
+.card p {
+    width: 90%;
+}
+
+.main-btn{
+
+    padding: 12px 24px !important;
+    border: 2px solid white;
+    font-size: 17px;
+    box-shadow: inset 0 1px 0 hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.15),0 1px 3px hsla(var(--color-primary-light-h), var(--color-primary-light-s), var(--color-primary-light-l), 0.25),0 2px 6px hsla(var(--color-primary-light-h), var(--color-primary-light-s), var(--color-primary-light-l), 0.1),0 6px 10px -2px hsla(var(--color-primary-light-h), var(--color-primary-light-s), var(--color-primary-light-l), 0.25);
+}
+
+#icons{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin-right: 0.7rem;
+}
+
 
 /* padding on very top of the page */
 #top-nav{
@@ -190,31 +241,36 @@
     flex-wrap: wrap;
 }
 
-.card{
-    height: 52.5vh;
-    flex-grow: 1;
-    max-width: 40vh;
-    padding-bottom: 10px;
+#sc-box{
+    padding: 64px 0;
+    max-height: 360px;
+    gap: 16px;
 }
 
-.card-img{
-
-    height: 40vh;
-    width: 40vh;
+#grey-footer{
+    padding: 23px 0; /* -> 16px */
 }
 
-.card p {
-    width: 90%;
+.gf-sect{
+    padding: 0 16px; /* -> 32px */
+    min-height: 95px;
+    color: #750009;
+    align-items: start;
 }
 
-.main-btn{
-
-    padding: 12px 24px !important;
-    border: 2px solid white;
-    font-size: 17px;
+.gf-sect.first{
+    min-width: calc(100% * 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.7);
 }
 
+.gf-sect.second{
+    min-width: calc(100% * 1/3);
+    border-right: 1px solid black;
+}
 
+.gf-sect.third{
+    min-width: calc(100% * 1/6);
+}
 
 /* FOOTER LINKS */
 
@@ -261,6 +317,10 @@
 a{
     color: white;
     text-decoration: none;
+}
+
+.fs-64{
+    font-size: 64px;
 }
 
 .fs-44{
