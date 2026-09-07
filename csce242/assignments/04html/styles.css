@@ -132,7 +132,6 @@
 }
 
 .card-img{
-
     height: 40vh;
     width: 40vh;
 }
@@ -141,8 +140,12 @@
     width: 90%;
 }
 
-.main-btn{
+button{
+    text-transform: uppercase;
+    font-weight: 800 !important;
+}
 
+.main-btn{
     padding: 12px 24px !important;
     border: 2px solid white;
     font-size: 17px;
@@ -179,7 +182,6 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-right: 1px solid white;
-    font-size: 12px !important;
 }
 
 .no-border{
@@ -206,7 +208,6 @@
 }
 
 #summ{
-    width: 50%;
     line-height: 1.8;
     padding: 40px 0;
     text-wrap-mode: initial;
@@ -368,6 +369,7 @@ footer{
     left: 0;
 
     width: 100%;
+    border-top: 1px solid white;
 }
 
 #black-footer .mini-links{
@@ -378,6 +380,10 @@ footer{
 #top-nav{
     background: black;
     padding-bottom: 12vh;
+}
+
+#top-nav .mink-links{
+    font-size: 10px !important;
 }
 
 #title-box{
@@ -392,6 +398,13 @@ footer{
     padding-left: 24px;
     padding-right: 24px;
     font-weight: bold;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 4;
 }
 
 /* TYPORGRAPHY */
@@ -413,7 +426,7 @@ a{
 }
 
 .fs-10{
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 .fs-16{
@@ -456,4 +469,96 @@ a{
     text-decoration: underline;
 }
 
+.upper{
+    text-transform: uppercase;
+}
+
+.upper *{
+    text-transform: uppercase;
+}
+
 /* MEDIA QUERIES */
+@media(max-width: 820px) {
+
+    .flex{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    #top-nav ul{
+        font-size: 7px !important;
+        flex-direction: row !important;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    #top-nav h1{
+        font-size: 18px;
+    }
+
+    #red-nav{
+        justify-content: center;
+    }
+
+    #red-nav *{
+        font-size: 10px;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    #usc-logo{
+        height: 100%;
+        width: 50vw;
+    }
+
+    #summ{
+        padding: 40px 16px;
+    }
+
+    .main-img{
+        margin-bottom: 50vh;
+    }
+
+    .main-img-box{
+        top: 90%;
+        width: 90%;
+        height: 50vh;
+        box-sizing: border-box !important;
+        padding: 32px;
+    }
+
+    .right-pos{
+        right: 5%;
+    }
+
+    .left-pos{
+        left: 5%;
+    }
+
+    .red-footer-sect .flex{
+        flex-direction: row !important;
+    }
+
+    #page-links{
+        align-items: center;
+    }
+
+    .gf-sect{
+        border: none;
+    }
+
+    #sc-box .flex{
+        flex-direction: row !important;
+    }
+
+    #black-footer{
+        flex-direction: row;
+    }
+
+    #quote-box{
+        padding: 48px 0;
+        font-size: 20px;
+    }
+} 
