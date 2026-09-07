@@ -5,11 +5,11 @@
 </head>
 <body>
     <div>
-        <header>
-            <div id="top-nav" class="white-text">
+        <header class="full-w">
+            <div id="top-nav" class="white-text full-w">
                 <!-- VERY TOP BAR -->
-                <nav class="container">
-                    <ul id="mini-links" class="flex fs-10">
+                <nav class="w-1360">
+                    <ul class="flex fs-10 mini-links">
                         
                         <li class="no-padding-left"><a href="#">Calendar</a></li>
                         <li><a href="#">Map</a></li>
@@ -21,19 +21,21 @@
                 </nav>
 
                 <!-- uses a flex box to space out the logo and the title of the page -->
-                <div id="title-box" class="flex container space-between">
+                <div id="title-box" class="flex container space-between w-1360">
                     <img id="usc-logo" src="images/usc-logo.svg">
                     <h1 class="fs-32">Floyd School of Medicine</h1>
                 </div>
             </div>
 
-            <div id="red-nav" class="flex text-white full-w bg-garnet fs-18 end">
-                <button class="fs-18 bg-garnet white-text">Educational V</button>
-                <button class="fs-18 bg-garnet white-text">Research V</button>
-                <button class="fs-18 bg-garnet white-text">Centers and Institutes V</button>
-                <button class="fs-18 bg-garnet white-text">About V</button>
-                
+            <div class="w-full bg-garnet">
+                <div id="red-nav" class="flex text-white w-1360 bg-garnet fs-18 end">
+                    <button class="fs-18 bg-garnet white-text">Educational V</button>
+                    <button class="fs-18 bg-garnet white-text">Research V</button>
+                    <button class="fs-18 bg-garnet white-text">Centers and Institutes V</button>
+                    <button class="fs-18 bg-garnet white-text">About V</button>
+                </div>
             </div>
+            
         </header>
         <main>
 
@@ -57,11 +59,14 @@
             </section>
 
             <!-- quote of the lady -->
-            <section id="quote" class="h-60 full-w flex center">
-                <div id="circ-img" class="testing"></div>
-                <p id="quote-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id optio praesentium tenetur, nostrum aut quo deserunt veritatis magnam quas officiis ipsa! nostrum aut quo deserunt veritatis magnam quas officiis ipsa! Modi, enim blanditiis quaerat provident voluptatum alias quia.<br>
-                    <span class="fw-bold fs-14 black-text">lorem ipsum odlor, sit, amet consectetur adipisicing elit</span>
-                </p>
+            <section id="quote" class="full-w">
+                <div class="w-1360 flex center h-60">
+                    <div id="circ-img" class="testing"></div>
+                    <p id="quote-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id optio praesentium tenetur, nostrum aut quo deserunt veritatis magnam quas officiis ipsa! nostrum aut quo deserunt veritatis magnam quas officiis ipsa! Modi, enim blanditiis quaerat provident voluptatum alias quia.<br>
+                        <span class="fw-bold fs-14 black-text">lorem ipsum odlor, sit, amet consectetur adipisicing elit</span>
+                    </p>
+                </div>
+                
             </section>
 
             <!-- basic img with the caption to the left now -->
@@ -74,26 +79,31 @@
             </section>
 
             <!-- cards on the website, 3 cards total -->
-            <section id="cards" class="h-70 full-w flex center">
+            <section id="cards" class="h-70 full-w">
 
-                <div class="card flex column space-between">
+                <div class="w-1360 flex evenly">
 
-                    <div class="card-img testing"></div>
-                    <p class="fw-bold garnet-text fs-22">News</p>
-                    <p class="black-text fs-16">lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="card flex column space-between">
+
+                        <div class="card-img testing"></div>
+                            <p class="fw-bold garnet-text fs-22">News</p>
+                            <p class="black-text fs-16">lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="card flex column space-between">
+
+                        <div class="card-img testing"></div>
+                        <p class="fw-bold garnet-text fs-22">News</p>
+                        <p class="black-text fs-16">lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="card flex column space-between">
+
+                        <div class="card-img testing"></div>
+                        <p class="fw-bold garnet-text fs-22">News</p>
+                        <p class="black-text fs-16">lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
-                <div class="card flex column space-between">
 
-                    <div class="card-img testing"></div>
-                    <p class="fw-bold garnet-text fs-22">News</p>
-                    <p class="black-text fs-16">lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="card flex column space-between">
 
-                    <div class="card-img testing"></div>
-                    <p class="fw-bold garnet-text fs-22">News</p>
-                    <p class="black-text fs-16">lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                </div>
 
             </section>
 
@@ -171,7 +181,88 @@
                 </div>
 
             </section>
+            
+            <section id="red-footer" class="w-1360 flex white-text">
+                <div class="red-footer-sect first">
+                    <h1 class="fs-18">lorum & ipsum</h1>
+                    <div class="flex w-full">
+                        
+                        <ul class="fs-14 flex column start">
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                        </ul>
+                        
+                        <ul class="fs-14 flex column start">
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                        </ul>
+                        
+                        <ul class="fs-14 flex column start">
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="red-footer-sect second">
+                    <h1 class="fs-18">lorum</h1>
+                    <div class="flex w-full">
+                        
+                        <ul class="fs-14 flex column start">
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                        </ul>
+                        
+                        <ul class="fs-14 flex column start">
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum ipsum</li></a>
+                        </ul>
 
+                    </div>
+                    
+                </div>
+                <div class="red-footer-sect third">
+                    <h1 class="fs-18">lorum</h1>
+                    <div class="flex w-full">
+                        
+                        <ul class="fs-14 flex column start">
+                            <a href="#"><li>lorum ipsum</li></a>
+                            <a href="#"><li>lorum</li></a>
+                            <a href="#"><li>lorum</li></a>
+                            <a href="#"><li>lorum</li></a>
+                            <a href="#"><li>lorum</li></a>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="black-footer" class="bg-black white-text ">
+                <ul class="mini-links flex fs-10 w-1360">
+                        
+                        <li class="no-padding-left"><a href="#">&copy; Lindsay Manalang</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">lorum ipsum acronym</a></li>
+                        <li><a href="#">loremius lipsumious</a></li>
+                        <li><a href="#">loremius lipsumious</a></li>
+                        <li><a href="#">loremius lipsumious</a></li>
+                        <li class="no-border"><a href="#">Contact</a></li>
+                    </ul>
+            </section>
         </footer>
     </div>
 </body>
