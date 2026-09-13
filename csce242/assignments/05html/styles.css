@@ -1,8 +1,28 @@
 /* STRUCTUAL */
 
+body{
+    background-color: #F2F2F2;
+}
+
 
 /* footer */
 
 
 
 /* TYPOGRAPHY */
+
+.blue-text{
+
+    color:#035AA6;
+}
+
+#lblue-text{
+    color:#04B2D9;
+}
+
+.yellow-text{
+    color:#F2C438;
+}
+
+
+/* MEDIA QUERIES */
