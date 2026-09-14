@@ -70,8 +70,34 @@ body{
     padding: 8px 8px; 
 }
 
-#selection{
-    text-align: start;
+#select{
+    margin-left: 0;
+}
+
+.start{
+    text-align: start !important;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#img-btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+#img-btn img{
+    height: 100%;
+    width: 100%;
+}
+
+#heart{
+    
 }
 
 
