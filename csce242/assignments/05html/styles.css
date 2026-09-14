@@ -32,6 +32,7 @@ header{
     margin:auto;
 }
 
+/* speech bubble */
 #bubble::after{
 
     content: "";
@@ -55,6 +56,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* big container of the columns */
 #flex{
     display: flex;
     align-items: center;
@@ -62,6 +64,7 @@ body{
     text-align: center;
 }
 
+/* each individual column */
 .border{
     height: 300px;
     width: 300px;
@@ -82,6 +85,7 @@ body{
     visibility: hidden;
 }
 
+/* mainly third column */
 #img-btn{
     height: 200px;
     width: 200px;
@@ -138,3 +142,17 @@ footer{
 
 
 /* MEDIA QUERIES */
+@media (max-width: 800px) {
+    
+    #flex{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .border{
+        padding: 8px 4px;
+        height: auto;
+        width: 90%;
+    }
+}

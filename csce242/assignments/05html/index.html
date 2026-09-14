@@ -3,24 +3,35 @@
     <head>
         <title>Javascript basics</title>
         <link rel="stylesheet" href="styles.css">
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
 
     <body>
         <div class="blue-text" >
+
+            <!-- The header without javascript interaction -->
             <header>
                 <h1>Assignment 5</h1>
                 <h2 class="yellow-text">Introduction to Javascript</h2>
             </header>
+
+            <!-- main content -->
             <main id="flex">
+
+                <!-- first column -->
                 <div class="border" id="box1">
                     <h3>Speech</h3>
 
                     <div id="bubble">Hi!</div>
                 </div>
+
+                <!-- second column -->
                 <div class="border flex-column-start">
                     <h3>Beverage</h3>
                     <h4 class="start">Pick your morning beverage:</h4>
+
+                    <!-- select menu -->
                     <select id="select" class="start">
                         <option value="">Select a value</option>
                         <option value="Orange Juice">Orange Juice</option>
@@ -28,13 +39,20 @@
                     </select>
                     <p id="select-text" class="selection hidden"></p>
                 </div>
+
+                <!-- third column -->
                 <div class="border">
                     <h3>Add a sticker</h3>
 
+                    <!-- big img div with the heart in there with position absolute -->
                     <div id="img-btn">
+
+                        <!-- heart image -->
                         <div id="heart" class="hidden">
                             <img src="images/redheart.png" alt="red heart">
                         </div>
+
+                        <!-- hello kitty image -->
                         <img src="images/hellokitty.jpg" alt="hello kitty image">
                     </div>
                 </div>
