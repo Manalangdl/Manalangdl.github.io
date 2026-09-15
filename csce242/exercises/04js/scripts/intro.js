@@ -23,3 +23,79 @@ document.getElementById("btn-bounce").onclick = (e) =>{
     document.getElementById("ball").classList.toggle("bouncing-ball");
     // console.log("hi"); //checks for err
 }
+
+// when you change the num of days sine you watered your plant
+// show a message and change the img
+// or .onkeyup
+document.getElementById("txt-num-days").onchange = (e) =>{ 
+    // parseInt makes the text to int
+    const numDays = parseInt(e.target.value);
+    const pMessage = document.getElementById("p-plant-msg");
+    const plantImage = document.getElementById("img-plant");
+    plantImage.classList.remove("hidden");
+
+    if(numDays <= 2){
+        // pMessage.innerHTML = "Let your plant rest it's only been " + numDays + " days";
+        pMessage.innerHTML =  `Let your plant rest it's only been ${numDays} day(s).`;
+        plantImage.src="https://dummyimage.com/150x150/556b2f/000000&text=Happy+Plant"
+    }
+    else if(numDays <= 5){
+        pMessage.innerHTML = `Time to water it's been ${numDays} days.`;
+        plantImage.src="https://dummyimage.com/150x150/bdb76b/000000&text=Happy+Plant"
+    }
+    else if(numDays <= 7){
+        pMessage.innerHTML = `Oh no your plant is wilting it's been ${numDays} days.`;
+    }
+    else{
+        pMessage.innerHTML = "Your plant is a goner";
+    }
+
+}
+
+// counting
+let countInterval;
+let count = 0;
+const pCount = document.getElementById("p-count");
+const btnStart = document.getElementById("btn-start");
+const btnPause = document.getElementById("btn-pause");
+const btnStop = document.getElementById("btn-stop");
+btnPause.disabled = true;
+btnStop.disabled = true;
+
+
+btnStart.onclick = () =>
+{
+    // every .500 sec, funct gets called
+    countInterval = setInterval(()=>{
+        pCount.innerHTML = ++count;
+    },500);
+    btnStart.disabled = true;
+    btnPause.disabled = false;
+    btnStop.disabled = false;
+};
+btnPause.onclick = () =>
+{
+    clearInterval(countInterval);
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
+};
+
+btnStop.onclick = () =>
+{
+    count=0;
+    pCount.innerHTML = "";
+    clearInterval(countInterval);
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
+};
+
+
+// DATE DISPLAY 
+setInterval(()=>{
+    const pDisplay = document.getElementById("date-display");
+    const today = new Date();
+    const seconds = today.getSeconds();
+    pDisplay.innerHTML = seconds;
+},1000)
