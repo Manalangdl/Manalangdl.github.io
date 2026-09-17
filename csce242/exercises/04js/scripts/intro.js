@@ -96,6 +96,38 @@ btnStop.onclick = () =>
 setInterval(()=>{
     const pDisplay = document.getElementById("date-display");
     const today = new Date();
+    const month = today.getMonth() + 1;
+    const day = today.getDate();
+    const year = today.getFullYear();
     const seconds = today.getSeconds();
-    pDisplay.innerHTML = seconds;
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
+    pDisplay.innerHTML = `${hours}:${minutes}:${seconds} ${month}/${day}/${year}`;
 },1000)
+
+// TOGGLE NAVIGATION
+//use # inside "" when using query selector()
+document.querySelector("#toggle-nav").onclick = () =>{
+    document.querySelector("main-nav ul").classList.toggle("hide-small");
+}
+
+// THERMOMETER
+
+// record the users donation and fill up the thermometer appropriately
+const GOAL = 10000;
+document.getElementById("goal").innerHTML = GOAL;
+
+document.getElementById("btn-donation").onclick = () =>{
+    const userDonation = parseInt(document.getElementById("txt-donation").value);
+    const donationP = document.getElementById("donation-message");
+    percent = userDonation / GOAL * 100;
+
+    donationP.innerHTML = `You are ${percent.toFixed(1)}% to your goal`;
+    document.querySelector(":root").style.setProperty("--donation",percent + "%");
+
+}
+
+// document.getElementById("txt-donation").onchange = (e) =>{
+//     const userDonation = parseInt(e.target.value);
+//     console.log(userDonation);
+// }
