@@ -108,7 +108,7 @@ setInterval(()=>{
 // TOGGLE NAVIGATION
 //use # inside "" when using query selector()
 document.querySelector("#toggle-nav").onclick = () =>{
-    document.querySelector("main-nav ul").classList.toggle("hide-small");
+    document.querySelector("#main-nav ul").classList.toggle("hide-small");
 }
 
 // THERMOMETER
