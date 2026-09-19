@@ -1,4 +1,4 @@
-// menu codde for mobile #menuArrow
+// menu code for mobile #menuArrow
 
 // tab code #exercise1 & #exercise2
 const div1 = document.getElementById("exercise1Div");
@@ -20,8 +20,14 @@ document.getElementById("exercise2").onclick = () => {
     }
 }
 
-
+const CLASSES = 25;
+const PERCENTAGE = 0.07;
+const PERCENTAGE_CONVERSION = 100;
+let percent;
 // input for exercise 1 #numInput
-
+document.getElementById("numInput").oninput = (e) => {
+    percent = (e.target.value / CLASSES * PERCENTAGE * PERCENTAGE_CONVERSION).toFixed(1);
+    document.getElementById("e1Response").innerHTML = "You will lose " + percent + "% for skipping " + e.target.value + " days.";
+}
 
 // code for End of Sem Counter
