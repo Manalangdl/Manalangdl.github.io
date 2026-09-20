@@ -76,7 +76,42 @@ nav{
     padding: 2px 8px;
 }
 
+section{
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+#hero-img{
+    box-shadow: 0px 4px rgb(0, 0, 0, 0.4);
+}
+
+#hero-blur{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    filter: blur(2px);
+}
+
+#hero-text{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    border-right: 2px solid black;
+}
+
 /* TYPOGRAPHY */
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .black-text{
     color: black;
 }
