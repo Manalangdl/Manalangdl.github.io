@@ -31,3 +31,30 @@ document.getElementById("numInput").oninput = (e) => {
 }
 
 // code for End of Sem Counter
+const today = new Date();
+const endOfSemester = new Date(2026, 11, 4, 3, 35);
+const timeDelta = Math.floor(((endOfSemester - today) / (1000 * 60 * 60 * 24)) + 1);
+
+document.getElementById("days-left").innerHTML = timeDelta;
+
+// message for the end of semester counter
+const message = document.querySelector("#message");
+
+if (timeDelta > 60) {
+    message.innerHTML = "You have more than 2 months left, keep learning and work hard."
+} 
+else if (timeDelta > 30){
+    message.innerHTML = "You have over a month left, getting closer to the finish line."
+}
+else if (timeDelta > 14){
+    message.innerHTML = "You have over 2 weeks left, keep up the hard work!"
+}
+else if (timeDelta > 7){
+    message.innerHTML = "You have over a week left, you've made it so far along."
+}
+else if (timeDelta > 1){ 
+    message.innerHTML = "You have less than a week left, wow you are practically done!"
+}
+else {
+    message.innerHTML = "Congratulations on making it through the semester!"
+}
