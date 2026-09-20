@@ -1,0 +1,96 @@
+/* STRUCTURAL */
+
+/* big changes */
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* testing border */
+.border{
+    border: 1px solid red;
+}
+
+/* flex classes */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.start{
+    justify-content: start;
+}
+
+.column{
+    flex-direction: column;
+}
+
+/* colors for the backgrounds */
+.bg-gray{
+    background: rgb(235, 235, 235);
+}
+
+.bg-light-maroon{
+    background: rgb(191, 23, 101);
+}
+
+.bg-maroon{
+    background: rgb(112, 37, 69);
+}
+
+.bg-white{
+    background: white;
+}
+
+/* general styles */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* makes the layout uniform like how it was done in the uofsc page */
+header, main, footer{
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* NAVIGATION */
+ul{
+    list-style: none;
+    width: 60%;
+}
+
+nav{
+    height: 40px;
+    width: 100%;
+    padding: 2px 8px;
+}
+
+/* TYPOGRAPHY */
+.black-text{
+    color: black;
+}
+
+.white-text{
+    color: white;
+}
+
+.maroon-text{
+    color: rgb(112, 37, 69);
+}
+
+.light-maroon-text{
+    color: rgb(191, 23, 101);
+}
+
+/* MEDIA QUERIES */
