@@ -33,7 +33,7 @@ main{
     border: 1px solid black;
     width: 90%;
     padding: 8px 16px;
-    height: 300px;
+    height: 240px;
 }
 
 main div{
@@ -71,6 +71,14 @@ nav p{
     background: black; /* should be regular text */
 }
 
+svg{
+    display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin-bottom: 4px;
+}
+
 /* TYPOGRAPHY */
 .red-text{
     color: red !important;
@@ -89,3 +97,44 @@ body{
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 600px){
+
+    .hiddenmb{
+        visibility: hidden;
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    main, footer{
+        width: 90%;
+    }
+
+    header, nav{
+        width: 100%;
+    }
+
+    svg{
+        height: 16px;
+        width: 16px;
+        visibility: visible;
+        display: block;
+        rotate: 180deg;
+    }
+
+    nav p{
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+
+    nav div{
+        text-align: start;
+        padding-top: 4px;
+    }
+
+    #exercise1::after{
+        content: none;
+        display: none;
+    }
+}
