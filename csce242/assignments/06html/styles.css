@@ -79,6 +79,12 @@ svg{
     margin-bottom: 4px;
 }
 
+section.flip{
+    transform: rotate(180deg);
+    height: 16px;
+    width: 16px;
+}
+
 /* TYPOGRAPHY */
 .red-text{
     color: red !important;

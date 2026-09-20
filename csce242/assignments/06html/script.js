@@ -1,7 +1,8 @@
 // menu code for mobile #menuArrow
-document.querySelector("svg").onclick = () => {
+document.querySelector("svg").onclick = (e) => {
 
     document.querySelector("nav div").classList.toggle("hiddenmb");
+    document.querySelector("nav section").classList.toggle("flip")
 }
 
 // tab code #exercise1 & #exercise2
@@ -28,12 +29,25 @@ const CLASSES = 25;
 const PERCENTAGE = 0.07;
 const PERCENTAGE_CONVERSION = 100;
 let percent;
+const e1Message = document.getElementById("e1Message");
 // input for exercise 1 #numInput
 document.getElementById("numInput").oninput = (e) => {
     percent = (e.target.value / CLASSES * PERCENTAGE * PERCENTAGE_CONVERSION).toFixed(1);
     document.getElementById("e1Response").innerHTML = "You will lose " + percent + "% for skipping " + e.target.value + " days.";
 
-    
+
+    if (e.target.value > 7){
+        e1Message.innerHTML = "That is over a week worth of fooling around!";
+    }
+    else if (e.target.value > 5){
+        e1Message.innerHTML = "Get your butt off the game, you missed over a business week worth"
+    }
+    else if (e.target.value > 0){
+        e1Message.innerHTML = e.target.value + ((e.target.value == 1) ? " day" : " days") + " too many!";
+    } 
+    else{
+        e1Message.innerHTML = "Wooo, perfect track record!"
+    }
 }
 
 // code for End of Sem Counter
