@@ -8,6 +8,7 @@ body{
     margin: 0;
 }
 
+/* backgrounds */
 .bg-pink{
     background: rgb(255, 228, 245);
 }
@@ -16,6 +17,7 @@ body{
     background: rgb(255, 251, 243);
 }
 
+/* general flex classes */
 .flex{
     display: flex;
     align-items: center;
@@ -30,6 +32,7 @@ body{
     justify-content: space-evenly;
 }
 
+/* main styling */
 main{
     border: 1px solid black;
     width: 90%;
@@ -42,6 +45,7 @@ main div{
     width: 100%;
 }
 
+/* used for hide items */
 .hidden{
     visibility: hidden;
     display: none;
@@ -62,6 +66,7 @@ nav p{
     position: relative;
 }
 
+/* the line divider */
 #exercise1::after{
     content: "";
     position: absolute;
@@ -72,6 +77,7 @@ nav p{
     background: black; /* should be regular text */
 }
 
+/* menu triangle */
 svg{
     display: none;
     visibility: hidden;
@@ -80,6 +86,7 @@ svg{
     margin-bottom: 4px;
 }
 
+/* turns the triangle 180 when clicked */
 section.flip{
     transform: rotate(180deg);
     height: 16px;
@@ -106,6 +113,7 @@ body{
 /* MEDIA QUERIES */
 @media (max-width: 600px){
 
+    /* menu hiding the exercise 1 and exercise 2 text */
     .hiddenmb{
         visibility: hidden;
         display: none;
