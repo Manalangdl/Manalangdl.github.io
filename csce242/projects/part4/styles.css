@@ -1,5 +1,9 @@
 /* VARS */
-
+:root{
+    --maroon: rgb(112, 37, 69);
+    --light-maroon: rgb(191, 23, 101);
+    --yellow: rgb(242, 212, 73);
+}
 
 /* STRUCTURAL */
 
@@ -51,11 +55,11 @@ body{
 }
 
 .bg-light-maroon{
-    background: rgb(191, 23, 101);
+    background: var(--light-maroon);
 }
 
 .bg-maroon{
-    background: rgb(112, 37, 69);
+    background: var(--maroon);
 }
 
 .bg-white{
@@ -75,10 +79,11 @@ header, main, footer{
     margin-right: auto;
 }
 
+/* hero section */
 #hero-img{
 
     position: relative;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
 
     background: url("imgs/heroheader.jpg");
@@ -140,6 +145,7 @@ header, main, footer{
     border-right: 2px solid black;
 }
 
+/* text inside hero section */
 #hero-content{
     height: 100%;
     width: 100%;
@@ -155,15 +161,16 @@ button{
 }
 
 button.yellow{
-    border: 2px solid rgb(242, 212, 73);
+    border: 2px solid var(--yellow);
 }
 
 #about-me{
-    height: 360px;
+    min-height: 360px;
     width: 100%;
     gap: 16px;
 }
 
+/* about me section */
 #polaroid{
     height: 100%;
     width: 200;
@@ -187,7 +194,7 @@ button.yellow{
     font-weight: 300;
 }
 
-
+/* cards area  */
 #nextSpot{
     min-height: 380px;
     padding: 16px 32px;
@@ -220,17 +227,25 @@ button.yellow{
 ul{
     list-style: none;
     width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+nav h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav{
-    height: 40px;
+    min-height: 40px;
     width: 100%;
     padding: 2px 8px;
 }
 
 /* FOOTER */
 footer{
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     background-color: black;
     padding: 12px;
@@ -257,9 +272,9 @@ footer h1{
     text-align: center;
 }
 
-
+/* text inside of footer */
 article div{
-
+    margin: 0 auto;
     height: 100%;
 }
 
@@ -268,6 +283,7 @@ html{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* colors */
 .black-text{
     color: black;
 }
@@ -277,21 +293,22 @@ html{
 }
 
 .maroon-text{
-    color: rgb(112, 37, 69);
+    color: var(--maroon);
 }
 
 .light-maroon-text{
-    color: rgb(191, 23, 101);
+    color: var(--light-maroon);
 }
 
 .yellow-text{
-    color: rgb(242, 212, 73);
+    color: var(--yellow);
 }
 
 .black-text{
     color: black;
 }
 
+/* sizes */
 .fs-4{
     font-size: 4px;
 }
@@ -330,3 +347,81 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+
+    /* redoing the flex */
+    .flex{
+        flex-direction: column;
+    }
+
+    .flex.no-col{
+        flex-direction: row !important;
+    }
+
+    /* cards */
+    .cards{
+        gap: 8px;
+    }
+
+    .card{
+        width: 90%;
+        height: 400px;
+        margin-bottom: 18px;
+    }
+
+    /* footer */
+    footer{
+        padding-left: 0;
+        padding-right: 0;
+        gap: 8px !important;
+    }
+
+    article div{
+        text-align: center;
+    }
+
+    #footer-text{
+        width: 90%;
+    }
+
+    #about-me article{
+        width: 80%;
+    }
+
+    /* hero */
+    #hero-img, #hero-blur, #hero-text{
+        height: 60vh;
+    }
+
+    #hero-blur{
+        width: 100%;
+    }
+    
+    #hero-text{
+        width: 100%;
+        padding: 16px;
+        justify-content: space-evenly;
+    }
+
+    /* navigation */
+    nav{
+        padding: 8px 0;
+        background-color: var(--maroon);
+    }
+
+    nav ul{
+        color: white !important;
+        font: 12px;
+    }
+
+    nav h1{
+        font-size: 32px;
+        color: var(--yellow) !important;
+        margin-bottom: 8px;
+    }
+
+    nav ul{
+        gap: 8px;
+    }
+}
