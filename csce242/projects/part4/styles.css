@@ -1,3 +1,6 @@
+/* VARS */
+
+
 /* STRUCTURAL */
 
 /* big changes */
@@ -180,6 +183,35 @@ button.yellow{
     font-weight: 300;
 }
 
+
+#nextSpot{
+    min-height: 380px;
+    padding: 16px 32px;
+}
+
+#cards{
+    width: 100%;
+    margin: 8px 0;
+}
+
+.card{
+    position: relative;
+    height: 350px;
+    width: 20%;
+}
+
+.card button{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
 /* NAVIGATION */
 ul{
     list-style: none;
@@ -234,8 +266,16 @@ html{
     font-size: 16px;
 }
 
+.fs-18{
+    font-size: 18;
+}
+
 .fs-24{
     font-size: 24px;
+}
+
+.fs-32{
+    font-size: 32px;
 }
 
 .fw-300{
