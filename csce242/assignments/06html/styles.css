@@ -5,6 +5,7 @@ body{
     padding: 16px 8px;
     text-align: center;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .bg-pink{
