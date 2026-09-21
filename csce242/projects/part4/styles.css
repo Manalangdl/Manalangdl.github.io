@@ -151,6 +151,35 @@ button.yellow{
     border: 2px solid rgb(242, 212, 73);
 }
 
+#about-me{
+    height: 360px;
+    width: 100%;
+    gap: 16px;
+}
+
+#polaroid{
+    height: 100%;
+    width: 200;
+}
+
+#polaroid img{
+    height: 100%;
+    width: 100%;
+    rotate: 8deg;
+}
+
+#about-me article{
+    width: 40%;
+}
+
+#about-me article h1{
+    width: initial;
+    padding: 4px 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 300;
+}
+
 /* NAVIGATION */
 ul{
     list-style: none;
