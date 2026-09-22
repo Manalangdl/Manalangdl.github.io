@@ -127,7 +127,4 @@ document.getElementById("btn-donation").onclick = () =>{
 
 }
 
-// document.getElementById("txt-donation").onchange = (e) =>{
-//     const userDonation = parseInt(e.target.value);
-//     console.log(userDonation);
-// }
+
