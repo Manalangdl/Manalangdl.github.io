@@ -1,3 +1,4 @@
+/* general */
 * {
 
     margin: 0;
@@ -5,6 +6,12 @@
     box-sizing: border-box;
 }
 
+/* copyright padding */
+p{
+    padding: 4px;
+}
+
+/* road */
 #road{
     height: 40svh;
     width: 100vw;
@@ -32,6 +39,7 @@
     transform: scaleX(3);
 }
 
+/* grass */
 .grass{
     height: 30svh;
     width: 100vw;
@@ -96,8 +104,4 @@
     border-top-right-radius: 30%;
 
     background-color: rgba(193, 252, 255, 0.707);
-}
-
-.car.pink{
-    background-color: pink;
 }

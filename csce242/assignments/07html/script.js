@@ -1,3 +1,4 @@
+// random function
 const random = (start, end) => {
 
     return Math.floor(Math.random() * (end - start + 1)) + start;
@@ -42,8 +43,10 @@ const generateCar = (color, top, left) => {
 
 window.onload = () => {
 
+    // makes road a static
     const road = document.getElementById("road");
 
+    // randomly picked colors for the cars 
     let colors = ["maroon","aqua","lightgreen","orchid","silver","white","khaki","pink"];
 
     // loops for amount of cars wanted
