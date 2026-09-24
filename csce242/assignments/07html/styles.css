@@ -45,8 +45,7 @@
     border-radius: 12%;
 
     position: absolute;
-    top: 5%;
-    left: 50%;
+
 
 }
 
@@ -91,6 +90,7 @@
     width: 60%;
     left:20%;
     top: -10%;
+    z-index: 3;
 
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
@@ -98,6 +98,6 @@
     background-color: rgba(193, 252, 255, 0.707);
 }
 
-.car.blue{
-    background-color: rgb(255, 152, 240);
+.car.pink{
+    background-color: pink;
 }
