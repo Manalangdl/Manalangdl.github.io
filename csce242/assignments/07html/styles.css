@@ -1,0 +1,39 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#road{
+    height: 40svh;
+    width: 100vw;
+    background-color: rgb(48, 48, 48);
+    position: relative;
+    
+    border-top: 7px solid rgb(250, 250, 250) ;
+    border-bottom: 7px solid rgb(250, 250, 250);
+
+    overflow: hidden;
+}
+
+#road::after{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    height: 50%;
+    width: 100%;
+
+    border-top: 15px dashed rgb(222, 222, 22);
+    transform-origin: center;
+    transform: scaleX(3);
+}
+
+.grass{
+    height: 30svh;
+    width: 100vw;
+    background-color: rgb(62, 163, 62);
+}
