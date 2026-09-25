@@ -1,0 +1,37 @@
+
+/* MAIN */
+main{
+    padding: 12px 16px;
+    min-height: 320px;
+}
+
+/* review */
+.review{
+    height: 300px;
+    width: 100%;
+    border-radius: 32px;
+    
+    background-color: var(--light-maroon-60);
+}
+
+.review-img{
+    height: 80px;
+    width: 120px;
+}
+
+.review-left{
+    width: 25%;
+    height: 100%;
+    padding: 12px;
+}
+
+.review-right{
+    height: 100%;
+    width: 70%;
+    padding: 12px;
+}
+
+.review-headers{
+    gap: 120px;
+    
+}

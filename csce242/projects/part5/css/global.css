@@ -1,0 +1,328 @@
+/* VARS */
+:root{
+    --maroon: rgb(112, 37, 69);
+    --light-maroon: rgb(191, 23, 101);
+    --yellow: rgb(242, 212, 73);
+
+    --light-maroon-60: rgba(191,23,101,0.6);
+}
+
+/* STRUCTURAL */
+
+/* big changes */
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#container{
+    overflow: hidden;
+}
+
+/* testing border */
+.testing{
+    border: 1px solid red;
+}
+
+/* flex classes */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.astart{
+    align-items: start;
+}
+
+.start{
+    justify-content: start;
+}
+
+.column{
+    flex-direction: column;
+}
+
+/* colors for the backgrounds */
+.bg-gray{
+    background: rgb(235, 235, 235);
+}
+
+.bg-light-maroon{
+    background: var(--light-maroon);
+}
+
+.bg-maroon{
+    background: var(--maroon);
+}
+
+.bg-white{
+    background: white;
+}
+
+/* general styles */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-div{
+    overflow: hidden;
+}
+
+.img-div img{
+    height: 100%;
+    width: 100%;
+}
+
+/* makes the layout uniform like how it was done in the uofsc page */
+header, main, footer{
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* hero section */
+#hero-img{
+
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+
+    background: url("../imgs/heroheader.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    background-blend-mode: overlay;
+}
+
+#hero-img::before, #hero-img::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    filter: blur(4px);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 4;
+}
+
+#hero-img::before{
+    top: -1px;
+}
+
+#hero-img::after{
+    bottom: -1px;
+}
+
+#hero-text{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border-right: 2px solid black;
+}
+
+
+/* NAVIGATION */
+ul{
+    list-style: none;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+nav h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    min-height: 40px;
+    width: 100%;
+    padding: 2px 8px;
+}
+
+/* FOOTER */
+footer{
+    min-height: 300px;
+    width: 100%;
+    background-color: black;
+    padding: 12px;
+}
+
+footer section{
+    height: 100%;
+    width: 40%;
+}
+
+#footer-img img{
+    height: 100%;
+    width: 100%;
+}
+
+#footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+}
+
+footer h1{
+    text-align: center;
+}
+
+/* text inside of footer */
+article div{
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* TYPOGRAPHY */
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* colors */
+.black-text{
+    color: black;
+}
+
+.white-text{
+    color: white;
+}
+
+.maroon-text{
+    color: var(--maroon);
+}
+
+.light-maroon-text{
+    color: var(--light-maroon);
+}
+
+.yellow-text{
+    color: var(--yellow);
+}
+
+.black-text{
+    color: black;
+}
+
+/* sizes */
+.fs-4{
+    font-size: 4px;
+}
+
+.fs-8{
+    font-size: 8px;
+}
+
+.fs-12{
+    font-size: 12px;
+}
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-18{
+    font-size: 18;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    /* redoing the flex */
+    .flex{
+        flex-direction: column;
+    }
+
+    .flex.no-col{
+        flex-direction: row !important;
+    }
+
+    /* footer */
+    footer{
+        padding-left: 0;
+        padding-right: 0;
+        gap: 8px !important;
+    }
+
+    article div{
+        text-align: center;
+    }
+
+    #footer-text{
+        width: 90%;
+    }
+
+    #about-me article{
+        width: 80%;
+    }
+
+    /* hero */
+    #hero-img, #hero-blur, #hero-text{
+        height: 60vh;
+    }
+
+    #hero-blur{
+        width: 100%;
+    }
+    
+    #hero-text{
+        width: 100%;
+        padding: 16px;
+        justify-content: space-evenly;
+    }
+
+    /* navigation */
+    nav{
+        padding: 8px 0;
+        background-color: var(--maroon);
+    }
+
+    nav ul{
+        color: white !important;
+        font: 12px;
+    }
+
+    nav h1{
+        font-size: 32px;
+        color: var(--yellow) !important;
+        margin-bottom: 8px;
+    }
+
+    nav ul{
+        gap: 8px;
+    }
+}
