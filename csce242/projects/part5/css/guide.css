@@ -1,0 +1,37 @@
+
+/* MAIN */
+
+#text{
+    text-align: center;
+    padding: 64px 18px;
+    color: var(--maroon);
+    border-bottom: 4px solid var(--maroon);
+}
+
+.card-guide{
+    height: 420px;
+    width: 320px;
+    padding: 0;
+    background: var(--gray);
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid var(--yellow);
+}
+
+#cards{
+    flex-wrap: wrap;
+    gap: 36px;
+    margin: 32px 0;
+}
+
+.card-guide-img{
+    height: 320px;
+    width: 320px;
+}
+
+.card-guide h3{
+    height: 100px;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 300;
+}
