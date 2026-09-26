@@ -4,7 +4,10 @@
     --light-maroon: rgb(191, 23, 101);
     --yellow: rgb(242, 212, 73);
     --orange: rgb(242, 168, 29);
+    --purple: rgb(174, 72, 128);
 
+    --yellow-60: rgba(242, 212, 73, 0.6);
+    --purple-60: rgba(174, 72, 128, 0.6);
     --light-maroon-60: rgba(191,23,101,0.6);
 }
 
@@ -249,7 +252,11 @@ html{
 }
 
 .fs-18{
-    font-size: 18;
+    font-size: 18px;
+}
+
+.fs-20{
+    font-size: 20px;
 }
 
 .fs-24{
