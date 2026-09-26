@@ -7,6 +7,11 @@
 
 /* STRUCTURAL */
 
+* {
+
+    box-sizing: border-box;
+}
+
 /* big changes */
 body{
     box-sizing: border-box;
@@ -86,7 +91,7 @@ header, main, footer{
     min-height: 300px;
     width: 100%;
 
-    background: url("imgs/heroheader.jpg");
+    background: url("../imgs/heroheader.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
