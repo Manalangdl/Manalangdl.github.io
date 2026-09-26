@@ -1,3 +1,59 @@
+/* hero section */
+#hero-img{
+
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+
+    background: url("../reviewimgs/review-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    background-blend-mode: overlay;
+}
+
+#hero-img::before, #hero-img::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    filter: blur(4px);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 4;
+}
+
+#hero-img::before{
+    top: -1px;
+}
+
+#hero-img::after{
+    bottom: -1px;
+}
+
+#hero-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    color:white;
+    font-size: 22px;
+    background: var(--light-maroon-20);
+    letter-spacing: 1.5px;
+}
+
+#hero-text h1{
+    font-weight: 400;
+}
+
+#hero-content{
+    gap: 30px;
+}
 
 /* MAIN */
 
@@ -9,13 +65,14 @@
 }
 
 .card-guide{
-    height: 420px;
-    width: 320px;
+    height: 300px;
+    width: 250px;
     padding: 0;
     background: var(--gray);
     border-radius: 30px;
     overflow: hidden;
     border: 3px solid var(--yellow);
+    margin: 0 32px;
 }
 
 #cards{
@@ -25,13 +82,13 @@
 }
 
 .card-guide-img{
-    height: 320px;
-    width: 320px;
+    height: 250px;
+    width: 250px;
 }
 
 .card-guide h3{
-    height: 100px;
+    height: 50px;
     width: 100%;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 300;
 }

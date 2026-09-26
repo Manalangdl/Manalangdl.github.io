@@ -1,6 +1,7 @@
 /* VARS */
 :root{
     --maroon: rgb(112, 37, 69);
+    --dark-maroon:rgb(89,2,50);
     --light-maroon: rgb(191, 23, 101);
     --yellow: rgb(242, 212, 73);
     --orange: rgb(242, 168, 29);
@@ -9,6 +10,7 @@
 
     --yellow-60: rgba(242, 212, 73, 0.6);
     --purple-60: rgba(174, 72, 128, 0.6);
+    --light-maroon-20: rgba(191,23,101,0.2);
     --light-maroon-60: rgba(191,23,101,0.6);
 }
 
@@ -104,52 +106,6 @@ header, main, footer{
 }
 
 
-/* hero section */
-#hero-img{
-
-    position: relative;
-    min-height: 300px;
-    width: 100%;
-
-    background: url("../imgs/heroheader.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    image-rendering: optimizeQuality;
-    background-blend-mode: overlay;
-}
-
-#hero-img::before, #hero-img::after{
-    content: "";
-    height: 2px;
-    width: 100%;
-    filter: blur(4px);
-    backdrop-filter: blur(4px);
-    position: absolute;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 4;
-}
-
-#hero-img::before{
-    top: -1px;
-}
-
-#hero-img::after{
-    bottom: -1px;
-}
-
-#hero-text{
-    position: absolute;
-    height: 100%;
-    width: 40%;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    border-right: 2px solid black;
-}
-
-
 /* NAVIGATION */
 ul{
     list-style: none;
@@ -160,7 +116,7 @@ ul{
 
 nav h1{
     font-family: "Pacifico", cursive;
-    font-weight: 400;
+    font-weight: 1000;
     font-style: normal;
 }
 
