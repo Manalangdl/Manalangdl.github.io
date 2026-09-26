@@ -3,6 +3,7 @@
     --maroon: rgb(112, 37, 69);
     --light-maroon: rgb(191, 23, 101);
     --yellow: rgb(242, 212, 73);
+    --orange: rgb(242, 168, 29);
 
     --light-maroon-60: rgba(191,23,101,0.6);
 }
@@ -21,6 +22,10 @@ body{
 
 #container{
     overflow: hidden;
+}
+
+.w-100{
+    width: 100%;
 }
 
 /* testing border */
@@ -257,6 +262,14 @@ html{
 
 .fw-300{
     font-weight: 300;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-500{
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6{

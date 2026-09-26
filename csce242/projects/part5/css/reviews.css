@@ -7,31 +7,74 @@ main{
 
 /* review */
 .review{
-    height: 300px;
-    width: 100%;
+    min-height: 300px;
+    width: 90%;
     border-radius: 32px;
+    margin: 0 auto;
+    border: 2px solid var(--maroon);
     
     background-color: var(--light-maroon-60);
 }
 
 .review-img{
-    height: 80px;
-    width: 120px;
+    height: 280px;
+    width: 280px;
+    border: 2px solid white;
+    border-radius: 32px;
+}
+
+.btn{
+    background: inherit;
+    border: 0px;
+    padding: 0;
+}
+
+.review-btn{
+    background: var(--orange);
+    border-radius: 64px;
+    padding: 8px 16px;
+    width: 60%;
+
+    color: var(--light-maroon);
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.review-right .inline h3{
+    display: inline-block;
+    font-weight: 400;
+    padding: 0 8px;
+}
+
+.review h2, .review .inline{
+    width: 50%;
+}
+
+.review-btn p{
+    padding: 0;
+    margin: 0;
 }
 
 .review-left{
     width: 25%;
     height: 100%;
-    padding: 12px;
+    padding: 12px 0;
+    padding-left: 24;
 }
 
 .review-right{
     height: 100%;
     width: 70%;
-    padding: 12px;
+    padding: 12px 24px 12px 0;
 }
 
 .review-headers{
     gap: 120px;
     
+}
+
+.review-text{
+    min-height: 250px;
+    height: 60%;
+    width: 100%;
 }
