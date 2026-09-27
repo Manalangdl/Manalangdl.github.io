@@ -64,10 +64,42 @@
 }
 
 /* MAIN */
+#browse{
+    height: 120px;
+    width: 100%;
+    padding: 0 32px;
+}
 
+.browse-img{
+    height: 80px;
+    width: 15%;
+}
+
+#refs{
+    height: 100%;
+    width: 70%;
+}
+
+#refs a{
+    width: 20%;
+    height: 80px;
+    border-right: 1px solid black;
+    padding: 0 54px;
+}
+
+#latino-link{
+    border-left: 1px solid black;
+}
+
+.ref{
+    height: 100%;
+    width: 100%;
+}
+
+/* regional eating */
 .region{
 
-    height: 360px;
+    height: 380px;
     width: 100%;
     border-top: 8px solid var(--yellow);
 }
@@ -80,19 +112,25 @@
 }
 
 .area{
-    height: 70%;
+    height: 75%;
     width: 35%;
     text-align: center;
     gap: 4px;
+    justify-content: space-between !important;
+    padding: 15px 0;
+}
+
+.area p{
+    margin: 0;
 }
 
 .area-img{
-    height: 50%;
-    width: 90%;
+    height: 160px;
+    width: 80%;
 }
 
 .area h1, .area p{
-    width: 90%;
+    width: 80%;
 }
 
 #budget{
