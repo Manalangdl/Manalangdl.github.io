@@ -79,6 +79,10 @@ body{
     background: var(--light-maroon);
 }
 
+.bg-light-maroon-60{
+    background: var(--light-maroon-60);
+}
+
 .bg-maroon{
     background: var(--maroon);
 }
