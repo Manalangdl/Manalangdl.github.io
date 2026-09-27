@@ -64,13 +64,18 @@
 }
 
 /* MAIN */
-
 main{
     margin: 16px 0;
 }
 
+#headings{
+    padding-left: 16px;
+}
+
 #exps {
     margin-top: 12px;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .exp{
@@ -78,13 +83,33 @@ main{
     height: 240px;
     width: 500px;
     background: var(--gray);
-    overflow: hidden;
     border-radius: 32px;
+    z-index: 3;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.dt{
+    position: absolute;
+    top: 6px;
+    left: 10px;
+
+    height: 15%;
+    width: 20%;
+
+    border-radius: 32px;
+    color: white;
+    background: var(--light-maroon);
+    font-size: 12px;
+}
+
+.dt p{
+    margin: 0;
 }
 
 .exp-img{
     width: 500px;
     height: 120px;
+    border-radius: 32px 32px 16px 16px;
 }
 
 .exp-text{
