@@ -82,4 +82,19 @@
 .area{
     height: 70%;
     width: 35%;
+    text-align: center;
+    gap: 4px;
+}
+
+.area-img{
+    height: 50%;
+    width: 90%;
+}
+
+.area h1, .area p{
+    width: 90%;
+}
+
+#budget{
+    border-bottom: 8px solid var(--yellow);
 }

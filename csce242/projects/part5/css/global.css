@@ -7,6 +7,7 @@
     --orange: rgb(242, 168, 29);
     --purple: rgb(174, 72, 128);
     --gray: rgb(217, 217, 217);
+    --tan: rgb(255, 238, 206);
 
     --yellow-60: rgba(242, 212, 73, 0.6);
     --purple-60: rgba(174, 72, 128, 0.6);
@@ -73,6 +74,10 @@ body{
 /* colors for the backgrounds */
 .bg-gray{
     background: rgb(235, 235, 235);
+}
+
+.bg-tan{
+    background: var(--tan);
 }
 
 .bg-light-maroon{
@@ -180,7 +185,7 @@ html{
 
 /* colors */
 .black-text{
-    color: black;
+    color: black !important;
 }
 
 .white-text{
