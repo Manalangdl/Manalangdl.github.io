@@ -1,0 +1,103 @@
+/* hero section */
+#hero-img{
+
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+
+    background: url("../reviewimgs/review-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    background-blend-mode: overlay;
+}
+
+#hero-img::before, #hero-img::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    filter: blur(4px);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 4;
+}
+
+#hero-img::before{
+    top: -1px;
+}
+
+#hero-img::after{
+    bottom: -1px;
+}
+
+#hero-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    color:white;
+    font-size: 22px;
+    background: linear-gradient(0deg, 
+                                rgba(0, 0, 0, 0.6), 
+                                rgba(0, 0, 0, 0.4));
+    letter-spacing: 1.5px;
+}
+
+#hero-text h1{
+    font-weight: 400;
+}
+
+#hero-text h3{
+    font-weight: 300;
+    text-align: center;
+}
+
+#hero-content{
+    gap: 30px;
+    width: 60%;
+}
+
+/* MAIN */
+
+main{
+    margin: 16px 0;
+}
+
+#exps {
+    margin-top: 12px;
+}
+
+.exp{
+    position: relative;
+    height: 240px;
+    width: 500px;
+    background: var(--gray);
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.exp-img{
+    width: 500px;
+    height: 120px;
+}
+
+.exp-text{
+    height: 120px;
+    padding: 4px 16px 12px 16px;
+}
+
+.exp-text p{
+    margin: 0;
+    margin-top: 4px;
+}
+
+#disclaimer{
+    margin-left: auto;
+    justify-self: flex-end;
+}
