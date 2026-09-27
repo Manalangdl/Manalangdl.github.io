@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex column">
+        <header>
+            <h1 class="pink-text">Assignment 10</h1>
+        </header>
+        <main>
+            <div class="flex column">
+                <h2 class="gray-text">Arrays</h2>
+                <div>
+                
+                    <!-- drop menu -->
+                    <label class="pink-text" for="select">Pick Your Destination Type: </label>
+                    <select id="select">
+                        <option value="None">Select</option>
+                        <option value="Beaches">Beaches</option>
+                        <option value="Parks">National Park</option>
+                    </select>
+                </div>
+
+                <!-- beaches list -->
+                <ul id="beaches" class="hidden flex column">
+                </ul>
+
+                <!-- national parks -->
+                <ul id="nat-parks" class="hidden flex column">
+                </ul>
+
+                <!-- iframe container -->
+                <div id="map" class="hidden">
+                    <!-- mb -->
+                    <iframe id="myrtle" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106194.10314314668!2d-78.96792273837806!3d33.72018458983355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x890068953b552101%3A0xbc0fb115b5d09618!2sMyrtle%20Beach%2C%20SC!5e0!3m2!1sen!2sus!4v1790472720534!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- pcb -->
+                    <iframe id="panama" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110310.93445764449!2d-85.95445191073546!3d30.230896273406387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88938c6ac73a8595%3A0xd221b1d83d0cc52c!2sPanama%20City%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1790472829833!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- daytona -->
+                    <iframe id="daytona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111465.41380246638!2d-81.17959110910157!3d29.18546472344255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e6db9425025683%3A0x366a3bb71dcb2aeb!2sDaytona%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1790472863472!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- virginia -->
+                    <iframe id="virginia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408956.90763351426!2d-76.34243490238421!3d36.79512963479218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89bac1e8fc1527a7%3A0x4161080a32e0173!2sVirginia%20Beach%2C%20VA!5e0!3m2!1sen!2sus!4v1790472892155!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    
+                    <!-- congaree -->
+                    <iframe id="congaree" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106099.41326798598!2d-80.85049863441583!3d33.79665415959367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ff351489bc0607%3A0x21e8761583db239a!2sCongaree%20National%20Park!5e0!3m2!1sen!2sus!4v1790472945447!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- everglades -->
+                    <iframe id="everglades" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461529.5408726702!2d-81.27330688184516!3d25.347861510207384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d0a8307a6c05db%3A0xfe03e56762f3197!2sEverglades%20National%20Park!5e0!3m2!1sen!2sus!4v1790472973173!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- gsm -->
+                    <iframe id="smoky" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415348.3531292098!2d-83.86093705467752!3d35.58063761748228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885e986b88fb1815%3A0x3c926fc1a7752461!2sGreat%20Smoky%20Mountains%20National%20Park!5e0!3m2!1sen!2sus!4v1790473007392!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- mammoth -->
+                    <iframe id="mammoth" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25428.738887698568!2d-86.12057492409994!3d37.186157416894964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8866032940e7f5b5%3A0xaad4a8c31e8abc0b!2sMammoth%20Cave%2C%20KY%2042259!5e0!3m2!1sen!2sus!4v1790473083679!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                </div>
+
+            </div>
+
+        </main>
+        <footer>
+            <p class="gray-text">lindsaymanalang&copy;</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

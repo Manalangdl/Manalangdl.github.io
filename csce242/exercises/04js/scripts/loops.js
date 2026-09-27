@@ -65,7 +65,7 @@ document.getElementById("btn-show-toys").onclick = () => {
     }*/
 
     toys.forEach((toy)=>{
-        const p = document.createElement('p').innerHTML;
+        const p = document.createElement('p');
         p.innerHTML = toy;
         toyList.append(p);
     });
