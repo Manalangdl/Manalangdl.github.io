@@ -78,6 +78,7 @@ main{
     gap: 16px;
 }
 
+/* Individual card for experiences */
 .exp{
     position: relative;
     height: 240px;
@@ -89,6 +90,7 @@ main{
     overflow: hidden;
 }
 
+/* date time on top left corner */
 .dt{
     position: absolute;
     top: 6px;
@@ -128,6 +130,7 @@ main{
     justify-self: flex-end;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
 
     .exp {

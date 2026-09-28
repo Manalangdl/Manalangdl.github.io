@@ -99,6 +99,8 @@ main{
     width: 90%;
     border-radius: 32px;
     margin: 0 auto;
+    margin-bottom: 24px;
+
     border: 2px solid var(--maroon);
     
     background-color: var(--light-maroon-60);

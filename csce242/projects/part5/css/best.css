@@ -65,6 +65,8 @@
 }
 
 /* MAIN */
+
+/* browse section */
 #browse{
     height: 120px;
     width: 100%;
@@ -106,14 +108,15 @@
 }
 
 .text{
-    height: 70%;
+    height: 280px;
     width: 15%;
     text-align: center;
     gap: 8px;
 }
 
+/* individual rests */
 .area{
-    height: 75%;
+    height: 280px;
     width: 35%;
     text-align: center;
     gap: 4px;
@@ -138,6 +141,7 @@
     border-bottom: 8px solid var(--yellow);
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
 
     .region{

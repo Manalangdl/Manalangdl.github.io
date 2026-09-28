@@ -360,6 +360,10 @@ h1, h2, h3, h4, h5, h6{
         gap: 8px !important;
     }
 
+    footer *{
+        gap: 12px;
+    }
+
     article div{
         text-align: center;
     }
