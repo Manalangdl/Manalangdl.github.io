@@ -21,7 +21,11 @@ body{
 
 /* hidden */
 .hidden{
-    display:none;
+    display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    scale: 0;
 }
 
 /* beach and parks */
@@ -50,9 +54,10 @@ a{
 }
 
 #map{
-    max-width: 100%;
-    aspect-ratio: 1 1;
-}
+    width: 600px;
+    height: 480px;
+    max-width: 90vw;
+} 
 
 #map iframe{
     height: 100%;
