@@ -5,7 +5,7 @@
     min-height: 300px;
     width: 100%;
 
-    background: url("../reviewimgs/review-img.png");
+    background: url("../expsimgs/header.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@
 
 /* MAIN */
 main{
-    margin: 16px 0;
+    margin: 16px auto;
 }
 
 #headings{
@@ -85,7 +85,8 @@ main{
     background: var(--gray);
     border-radius: 32px;
     z-index: 3;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .dt{
@@ -125,4 +126,16 @@ main{
 #disclaimer{
     margin-left: auto;
     justify-self: flex-end;
+}
+
+@media (max-width: 600px) {
+
+    .exp {
+        width: 90%;
+    }
+
+    .dt{
+        height: 18%;
+        width: 22%;
+    }
 }

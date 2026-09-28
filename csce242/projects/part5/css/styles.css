@@ -248,6 +248,49 @@ nav{
     padding: 2px 8px;
 }
 
+/* mobile menu */
+.mb{
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
+    scale: 0;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background: var(--maroon);
+    z-index: 10;
+}
+
+aside h1{
+    font-family: "Pacifico", cursive;
+    color: var(--light-maroon);
+}
+
+aside ul{
+    height: 100%;
+    width: 100%;
+    padding: 25% 0;
+    color: var(--yellow);
+}
+
+aside ul li {
+    cursor: pointer;
+}
+
+.closed{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    display: none;
+    scale: 0;
+}
+
 /* FOOTER */
 footer{
     min-height: 300px;
@@ -351,9 +394,27 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 600px) {
+
+    .hidden{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        display: none;
+        scale: 0;
+    }
+
+    .mb{
+        visibility: visible;
+        display: initial;
+        height: initial;
+        width: initial;
+        scale: 1;
+    }
 
     /* redoing the flex */
     .flex{
@@ -411,8 +472,9 @@ h1, h2, h3, h4, h5, h6{
 
     /* navigation */
     nav{
-        padding: 8px 0;
+        padding: 8px 16px;
         background-color: var(--maroon);
+        align-items: end;
     }
 
     nav ul{

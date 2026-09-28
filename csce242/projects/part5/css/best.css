@@ -5,7 +5,7 @@
     min-height: 300px;
     width: 100%;
 
-    background: url("../reviewimgs/review-img.png");
+    background: url("../bestimgs/header.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,9 +43,10 @@
 
     color:white;
     font-size: 22px;
-    background: linear-gradient(0deg, 
+    background: linear-gradient(0deg,
                                 rgba(0, 0, 0, 0.6), 
-                                rgba(0, 0, 0, 0.4));
+                                var(--purple-60)
+                                );
     letter-spacing: 1.5px;
 }
 
@@ -99,7 +100,7 @@
 /* regional eating */
 .region{
 
-    height: 380px;
+    min-height: 380px;
     width: 100%;
     border-top: 8px solid var(--yellow);
 }
@@ -135,4 +136,16 @@
 
 #budget{
     border-bottom: 8px solid var(--yellow);
+}
+
+@media (max-width: 600px) {
+
+    .region{
+        gap: 24px;
+        padding: 36px 0;
+    }
+
+    .area, .text {
+        width: 90%;
+    }
 }

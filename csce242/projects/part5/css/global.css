@@ -25,10 +25,12 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 #container{
     overflow: hidden;
+    background: white;
 }
 
 .h-100{
@@ -141,6 +143,49 @@ nav{
     min-height: 40px;
     width: 100%;
     padding: 2px 8px;
+}
+
+/* mobile menu */
+.mb{
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
+    scale: 0;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background: var(--maroon);
+    z-index: 10;
+}
+
+aside h1{
+    font-family: "Pacifico", cursive;
+    color: var(--light-maroon);
+}
+
+aside ul{
+    height: 100%;
+    width: 100%;
+    padding: 25% 0;
+    color: var(--yellow);
+}
+
+aside ul li {
+    cursor: pointer;
+}
+
+.closed{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    display: none;
+    scale: 0;
 }
 
 /* FOOTER */
@@ -261,12 +306,51 @@ h1, h2, h3, h4, h5, h6{
 @media (max-width: 600px) {
 
     /* redoing the flex */
+
+    .mb{
+        visibility: visible;
+        display: initial;
+        height: initial;
+        width: initial;
+        scale: 1;
+    }
+    .hidden{
+        visibility: hidden;
+        display: none;
+        height: 0;
+        width: 0;
+        scale: 0;
+    }
+
     .flex{
         flex-direction: column;
     }
 
     .flex.no-col{
         flex-direction: row !important;
+    }
+
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .mw-90{
+        width: 90%;
+    }
+
+    .tc{
+        text-align: center;
+    }
+
+    .mstart{
+        justify-content: start;
+        gap: 8px;
+    }
+
+    .ar-1-1 {
+        aspect-ratio: 1 1;
     }
 
     /* footer */
@@ -305,7 +389,7 @@ h1, h2, h3, h4, h5, h6{
 
     /* navigation */
     nav{
-        padding: 8px 0;
+        padding: 8px 16px;
         background-color: var(--maroon);
     }
 

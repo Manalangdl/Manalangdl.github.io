@@ -12,16 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Nav menu -->
+    <aside class="closed">
+
+        <ul class="flex column evenly fs-24">
+            <h1>ColaMunchies</h1>
+            <a href="index.html"><li>Home</li></a>
+            <a href="reviews.html"><li>Restaurant Review</li></a>
+            <a href="best.html"><li>Best Eats</li></a>
+            <a href="experiences.html"><li>Food Experiences</li></a>
+            <a href="guide.html"><li>Columbia Guide</li></a>
+        </ul>
+    </aside>
     <div id="container">
         <!-- nav bar and the hero section -->
         <header>
             <!-- nav bar -->
-            <nav class="flex between">
+            <nav class="flex between no-col">
                 <!-- the website name on the left side -->
                 <h1 class="maroon-text fs-24">Cola Munchies</h1>
 
+                <svg id="hamburger" class="mb" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_429_11066)">
+                        <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="var(--yellow)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_429_11066">
+                            <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+
                 <!-- the links on the right side -->
-                <ul class="flex evenly black-text">
+                <ul class="hidden flex evenly black-text">
                     <a href="index.html"><li>Home</li></a>
                     <a href="reviews.html"><li>Restaurant Review</li></a>
                     <a href="best.html"><li>Best Eats</li></a>
@@ -58,52 +81,57 @@
                 <div class="card-guide">
                     <!-- image -->
                     <div class="img-div card-guide-img">
-                        <img src="reviewimgs/tacos-locos.png" alt="Location">
+                        <img src="guideimgs/Downtown.png" alt="Location">
                     </div>
 
                     <!-- name -->
                     <h3 class="flex">Downtown</h3>
                 </div>
+
                 <div class="card-guide">
                     <!-- image -->
                     <div class="img-div card-guide-img">
-                        <img src="reviewimgs/tacos-locos.png" alt="Location">
+                        <img src="guideimgs/Cayce.png" alt="Location">
                     </div>
 
                     <!-- name -->
                     <h3 class="flex">Cayce</h3>
                 </div>
+
                 <div class="card-guide">
                     <!-- image -->
                     <div class="img-div card-guide-img">
-                        <img src="reviewimgs/tacos-locos.png" alt="Location">
+                        <img src="guideimgs/Rosewood.png" alt="Location">
                     </div>
 
                     <!-- name -->
                     <h3 class="flex">Rosewood</h3>
                 </div>
+
                 <div class="card-guide">
                     <!-- image -->
                     <div class="img-div card-guide-img">
-                        <img src="reviewimgs/tacos-locos.png" alt="Location">
+                        <img src="guideimgs/OnCampus.png" alt="Location">
                     </div>
 
                     <!-- name -->
                     <h3 class="flex">On Campus</h3>
                 </div>
+
                 <div class="card-guide">
                     <!-- image -->
                     <div class="img-div card-guide-img">
-                        <img src="reviewimgs/tacos-locos.png" alt="Location">
+                        <img src="guideimgs/Dentsville.png" alt="Location">
                     </div>
 
                     <!-- name -->
                     <h3 class="flex">Dentsville</h3>
                 </div>
+
                 <div class="card-guide">
                     <!-- image -->
                     <div class="img-div card-guide-img">
-                        <img src="reviewimgs/tacos-locos.png" alt="Location">
+                        <img src="guideimgs/Irmo.png" alt="Location">
                     </div>
 
                     <!-- name -->

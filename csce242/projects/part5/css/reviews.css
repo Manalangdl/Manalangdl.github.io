@@ -173,3 +173,31 @@ main{
     height: 60%;
     width: 100%;
 }
+
+@media (max-width: 600px){
+
+    #inputs{
+        gap: 24px;
+    }
+
+    .review-left, .review-right{
+        width: 100%;
+    }
+
+    .review-left{
+        padding: 16px 0 12px 0;
+    }
+
+    .review-right{
+        align-items: center !important;
+        padding: 12px;
+    }
+
+    .review-headers{
+        justify-content: center !important;
+        gap: 16px !important;
+    }
+
+
+
+}
