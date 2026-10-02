@@ -1,0 +1,41 @@
+/* STRUCTUAL */
+
+/* page settings */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* main body */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    background-color: white;
+}
+
+/*
+COLORS
+logo burgundy #590232
+header burgundy #6A1B47
+
+text/button pink #BF1665
+button yellow #F2D649
+
+text dark gray #3A3A3A
+light gray #D9D9D9
+
+yellow #FFF1A9
+background cream #FFF8EB
+
+*/
+
+
+/* NAVIGATION */
+
+
+/* TYPOGRAPHY */
+
+a{
+    text-decoration:none;
+}
