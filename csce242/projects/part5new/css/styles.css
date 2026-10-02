@@ -40,8 +40,8 @@ bg cream rgba(255, 248, 235, 1) #FFF8EB
 
 /* main body */
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
+    font-family:"Inter",sans-serif;
+    color:black;
 }
 
 /* FLEX */
@@ -68,11 +68,55 @@ body{
     background-color: white;
 }
 
-#maroon-logo{
+.nav-list{
+    gap: 40px;
+}
+
+.nav-list a{
+    color: black;
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+.nav-list a:hover{
+    color:var(--bright-pink);
+    transform: scale(1.1);
+    transform-origin: top;
+}
+
+/* logo */
+#nav-logo{
     color:var(--dark-maroon);
     font-family: "Pacifico",cursive;
-    font-weight:400;
-    font-style:normal;
+    font-size:34px;
+    font-weight:bold;
+}
+
+/* HERO */
+#hero{
+    background-color:var(--dark-maroon-h);
+    padding: 35px 60px;
+    min-height:286px;
+}
+
+/* txt left of hero */
+#hero-text{
+    width: 45%;
+}
+
+/* hero heading */
+#hero-text h1{
+    color: white;
+    font-family:"Crimson Text",serif;
+    font-size:38px;
+    line-height: 1.1;
+    margin-bottom:25px;
+}
+
+/* hero sub */
+#hero-text p{
+    
 }
 
 
