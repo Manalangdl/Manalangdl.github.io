@@ -4,16 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColaMunchies</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- pacifico font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
-        <header>
+        <header class="navbar flex flex-between">
             <!-- logo -->
-            <div> </div>
+            <div id="nav-logo">ColaMunchies </div>
 
             <!-- nav bar -->
             <nav>
-                <ul>
+                <ul class="flex nav-list">
                     <a href="#">Home</a>
                     <a href="#">Reviews</a>
                     <a href="#">Top Picks</a>
@@ -23,22 +28,22 @@
             </nav>
 
             <!-- hero -->
-            <section>
+            <section id="hero" class="flex flex-between">
 
                 <!-- left-side text -->
-                <div>
+                <div class="hero-text">
                     <h1>Food tailored for the best taste buds</h1>
                     <p>Local foods. Columbia, SC</p>
                 </div>
 
                 <!-- hero buttons -->
-                <div>
-                    <a href="#">Explore Reviews →</a>
-                    <a href="#">Contact Us</a>
+                <div class="flex hero-buttons">
+                    <a href="#" class="pink-btn">Explore Reviews →</a>
+                    <a href="#" class="contact-btn">Contact Us</a>
                 </div>
                 <!-- food img -->
-                <div>
-                <img src="hero-imgs/hero1.png" alt="Food Spread">
+                <div class="hero-image">
+                    <img src="hero-imgs/hero1.png" alt="Food Spread">
                 </div>
 
             </section>
@@ -48,45 +53,45 @@
         <main>
 
             <!-- WHAT IM CRAVING -->
-            <section>
+            <section id="cravings">
                 <!-- sect heading -->
                 <h2>What I'm Craving...</h2>
-                <p>Top foods I cannot get enough of</p>
+                <p class="sect-subtitle">Top foods I cannot get enough of</p>
 
                 <!-- cards container -->
-                <div>
+                <div class="flex food-cards">
                     <!-- food card 1: inakaya -->
-                    <div>
+                    <div class="food-card" >
                         <img src="home-imgs/sushi-circ.png" alt="Sushi platter">
 
                         <h3>Inakaya</h3>
                         <p>Sushi Platter</p>
 
                         <!-- stars -->
-                        <div></div>
+                        <div class="stars-1"></div>
 
                     </div>
 
                     <!-- food card 2: menkoi -->
-                    <div>
+                    <div class="food-card">
                         <img src="home-imgs/ramen-circ.png" alt="Bowl of ramen">
                         
                         <h3>Menkoi Ramen</h3>
                         <p>Spicy Tonkotsu Ramen</p>
 
                         <!-- stars -->
-                        <div></div>
+                        <div class="stars-1"></div>
                     </div>
                     
                     <!-- food card 3: q's -->
-                    <div>
+                    <div class="food-card">
                         <img src="home-imgs/bagel-circ.png" alt="Bagel">
 
                         <h3>Q's Corner Café</h3>
                         <p>BEC Bagel</p>
 
                         <!-- stars -->
-                        <div></div>
+                        <div class="stars-1"></div>
                         
                     </div>
 
@@ -96,27 +101,27 @@
 
 
             <!-- FIND YOUR NEXT SPOT -->
-            <section>
+            <section id="next-spot">
                 <!-- sect heading -->
                 <h2>Find Your Next Spot</h2>
 
                 <!-- column container -->
-                <div>
+                <div class="flex spot-container">
 
                     <!-- LEFT -->
-                    <div>
+                    <div class="spot-card">
                        <img src="home-imgs/home-review.png" alt="Reviews">
                        <h3>Restaurant Reviews</h3>
                        <p>Follow along our community and their experiences.</p>
-                       <a href="#">View Reviews →</a>
+                       <a href="#" class="pink-btn">View Reviews →</a>
                     </div>
 
                     <!-- RIGHT -->
-                    <div>
+                    <div class="spot-card">
                         <img src="home-imgs/home-eats.png" alt="Pizza">
                         <h3>Best Eats</h3>
                         <p>Check out my top picks by category.</p>
-                        <a href="#">Try Next →</a>
+                        <a href="#" class="pink-btn">Try Next →</a>
                     </div>
 
                 </div>
@@ -124,29 +129,29 @@
             </section>
 
             <!-- QUICK GUIDE -->
-            <section>
+            <section id="quick-guide">
 
                 <!-- heading -->
                 <h2>Quick Guide to Columbia</h2>
-                <p>Top rated restaurants based on location</p>
+                <p id="guide-subt">Top rated restaurants based on location</p>
 
                 <!-- guide content -->
-                <div>
+                <div class="flex guide-container">
 
                     <!-- restaurant list -->
-                    <div>
+                    <div class="restaurant-list flex flex-column">
 
-                        <button>1. Backstreets Grill | Devine St.</button>
+                        <button class="restaurant">1. Backstreets Grill | Devine St.</button>
                         
-                        <button>2. JJ's Teahouse | Blossom St.</button>
+                        <button class="restaurant">2. JJ's Teahouse | Blossom St.</button>
 
-                        <button>3. Dano's Pizza | Rosewood Dr.</button>
+                        <button class="restaurant">3. Dano's Pizza | Rosewood Dr.</button>
 
                     </div>
 
                     <!-- map -->
                     <!-- TODO -->
-                    <div>
+                    <div id="home-map">
                         <img>
                     </div>
 
@@ -155,23 +160,27 @@
             </section>
 
             <!-- about -->
-            <section>
+            <section id="about">
                 <h2>Made for all Food Lovers</h2>
                 <p>Cola Munchies is dedicated to satisfying your craving and curiosity. We are here to help you explore various cuisines, finding local sit-down restaurants, quick bites, and overall quality experiences.</p>
             
-                <a href="#">Find out More →</a>
+                <a href="#" class="pink-btn">Find out More →</a>
             </section>
         
         </main>
-        <footer>
+        <footer id="footer" class="flex flex-between">
             <!-- logo -->
-            <div>ColaMunchies</div>
+            <div id="footer-logo">
+                <div id="white-logo">ColaMunchies</div>
 
+                <!-- copyright -->
+                <p>&copy; 2026 ColaMunchies. All rights reserved.</p>
+            </div>
             <!-- socials -->
-            <div>
+            <div class="footer-sect">
                 <h3>Follow Along</h3>
 
-                <div>
+                <div class="flex social-links">
 
                     <!-- TODO: ADD IMGS -->
                     <a href="#"><img src="" alt="Facebook"></a>
@@ -183,8 +192,8 @@
             </div>
 
             <!-- FOOTER NAV -->
-            <div>    
-                <ul>
+            <div id="footer-sect">    
+                <ul class="footer-nav">
                     <a href="#">Home</a>
                     <a href="#">Reviews</a>
                     <a href="#">Top Foods</a>

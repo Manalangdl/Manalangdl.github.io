@@ -1,5 +1,36 @@
 /* STRUCTUAL */
 
+/*
+COLORS
+logo burgundy rgba(89, 2, 50, 1) #590232
+header burgundy rgba(106, 27, 71, 1) #6A1B47
+
+text/button pink rgba(191, 22, 101, 1) #BF1665
+button yellow rgba(242, 214, 73, 1) #F2D649
+
+text dark gray rgba(58, 58, 58, 1) #3A3A3A
+light gray rgba(217, 217, 217, 1) #D9D9D9
+
+bright yellow rgba(255, 241, 169, 1) #FFF1A9
+bg cream rgba(255, 248, 235, 1) #FFF8EB
+
+*/
+
+/* VARS */
+:root{
+    --dark-maroon: rgba(89, 2, 50, 1);
+    --dark-maroon-h:rgba(106, 27, 71, 1);
+
+    --bright-pink:rgba(191, 22, 101, 1);
+    --yellow:(242, 214, 73, 1);
+
+    --dark-gray:rgba(58, 58, 58, 1);
+    --light-gray:rgba(217, 217, 217, 1);
+
+    --bright-yellow:rgba(255, 241, 169, 1);
+    --cream:rgba(255, 248, 235, 1);
+}
+
 /* page settings */
 *{
     margin:0;
@@ -10,32 +41,48 @@
 /* main body */
 body{
     font-family:Arial, Helvetica, sans-serif;
-    color:black;
-    background-color: white;
+    color:white;
 }
 
-/*
-COLORS
-logo burgundy #590232
-header burgundy #6A1B47
+/* FLEX */
+.flex{
+    display:flex;
+}
 
-text/button pink #BF1665
-button yellow #F2D649
+.flex-between{
+    justify-content: space-between;
+    align-items:center;
+}
 
-text dark gray #3A3A3A
-light gray #D9D9D9
+.flex-column{
+    flex-direction:column;
+}
 
-yellow #FFF1A9
-background cream #FFF8EB
 
-*/
 
 
 /* NAVIGATION */
+.navbar{
+    height: 77px;
+    padding: 0 60px;
+    background-color: white;
+}
+
+#maroon-logo{
+    color:var(--dark-maroon);
+    font-family: "Pacifico",cursive;
+    font-weight:400;
+    font-style:normal;
+}
 
 
 /* TYPOGRAPHY */
 
 a{
+    /* underline remove */
     text-decoration:none;
+}
+
+ul{
+    list-style:none;
 }
