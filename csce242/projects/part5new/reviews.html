@@ -13,17 +13,17 @@
 </head>
 <body>
     <div>
-         <header class="navbar flex flex-between flex-column">
+         <header class="navbar flex flex-between flex-column w-100">
             
 
             <!-- nav bar -->
-            <nav class="w-100 flex flex-evenly">
+            <nav class="w-100 flex flex-between">
                 <!-- logo -->
                 <div id="nav-logo">ColaMunchies</div>
 
                 <ul class="flex nav-list">
-                    <a href="#">Home</a>
-                    <a href="#">Reviews</a>
+                    <a href="index.html">Home</a>
+                    <a href="reviews.html">Reviews</a>
                     <a href="#">Top Picks</a>
                     <a href="#">Guide</a>
                     <a href="#">About</a>
@@ -39,25 +39,28 @@
         <main>
             <!-- COMMUNITY REVIEWS/SECT -->
             <section class="review-sect">
-                <div class="container">
-                    <div id="review-h flex flex-between">
+                <div class="">
+                    <div class="review-h flex flex-between">
                         <h2>FRESH FROM OUR COMMUNITY</h2>
                         <a href="#" class="view-all">View All</a>
                     </div>
 
-                    <div class="review-grid">
+                    <div class="review-grid flex flex-evenly">
 
                         <!-- REVIEW 1 -->
-                        <div class="review-card flex flex-column">
-                            <p class="author">John Regan reviewed
-                                <a href="#">Tacos Locos</a>
-                            </p>
+                        <div class="review-card flex flex-column flex-between">
+                            <div class="">
+                                <p class="author">John Regan reviewed
+                                    <a href="#">Tacos Locos</a>
+                                </p>
 
-                            <p class="review-txt"> “Tacos Locos nails that perfect blend of lively
-                                energy and laid-back comfort, making it a spot you
-                                actually want to hang around in. The warm lighting
-                                and colorful” ...
-                            </p>
+                                <p class="review-txt"> “Tacos Locos nails that perfect blend of lively
+                                    energy and laid-back comfort, making it a spot you
+                                    actually want to hang around in. The warm lighting
+                                    and colorful” ...
+                                </p>
+                            </div>
+                            
                             <div class="review-bottom flex flex-between">
                                 <div class="stars flex">
                                     <span>★</span>
@@ -67,22 +70,29 @@
                                     <span class="empty">☆</span>
                                 </div>
 
-                                <p>09/13/26</p>
-
+                                
+                                <p class="date">09/13/26</p>
                             </div>
+
+                            
                         </div>
 
 
                         <!-- REVIEW 2 -->
-                        <div class="review-card">
-                            <p class="author">Lindsay Manalang reviewed
-                                <a href="#">Inakaya</a>
-                            </p>
+                        <div class="review-card flex flex-column flex-between">
 
-                            <p class="review-txt"> “Inakaya delivers the kind of atmosphere that feels
-                                almost transported straight from a quiet Tokyo side
-                                street—soft lantern lighting, ” ...
-                            </p>
+                            <div class="">
+
+                                <p class="author">Lindsay Manalang reviewed
+                                    <a href="#">Inakaya</a>
+                                </p>
+
+                                <p class="review-txt"> “Inakaya delivers the kind of atmosphere that feels
+                                    almost transported straight from a quiet Tokyo side
+                                    street—soft lantern lighting, ” ...
+                                </p>
+                            </div>
+                            
                             <div class="review-bottom flex flex-between">
                                 <div class="stars flex">
                                     <span>★</span>
@@ -92,21 +102,26 @@
                                     <span>★</span>
                                 </div>
 
-                                <p>09/12/26</p>
-
+                                
+                                <p class="date">09/12/26</p>
                             </div>
+                            
                         </div>
 
                         <!-- REVIEW 3 -->
-                        <div class="review-card">
-                            <p class="author">Jacqueline Nguyen reviewed
-                                <a href="#">Inakaya</a>
-                            </p>
+                        <div class="review-card flex-between flex-column flex ">
 
-                            <p class="review-txt"> “Inakaya felt completely different from any place
-                                I’ve eaten before. It was my first time at a sushi
-                                bar. I was surprised by how fresh and clean” ...
-                            </p>
+                            <div class="">
+                                <p class="author">Jacqueline Nguyen reviewed
+                                    <a href="#">Inakaya</a>
+                                </p>
+
+                                <p class="review-txt"> “Inakaya felt completely different from any place
+                                    I’ve eaten before. It was my first time at a sushi
+                                    bar. I was surprised by how fresh and clean” ...
+                                </p>
+                            </div>
+                            
                             <div class="review-bottom flex flex-between">
                                 <div class="stars flex">
                                     <span>★</span>
@@ -130,10 +145,10 @@
                 <div class="container">
                     <h2>Have a Recommended Place?</h2>
 
-                    <div class="form-layout flex">
+                    <div class="form flex">
 
                         <!-- form -->
-                        <div class="form-column">
+                        <div class="form-inputs form-column">
                             <h3>Leave a Review</h3>
                             <div>
                                 <label for="name">Name</label>
@@ -164,11 +179,12 @@
                         <div class="rating-column flex flex-column flex-center">
                             <h3>Stars</h3>
                             <div class="rating-stars flex">
-                            <button type="button">☆</button>
-                            <button type="button">☆</button>
-                            <button type="button">☆</button>
-                            <button type="button">☆</button>
-                            <button type="button">☆</button>
+                                <button type="button">☆</button>
+                                <button type="button">☆</button>
+                                <button type="button">☆</button>
+                                <button type="button">☆</button>
+                                <button type="button">☆</button>
+                            </div>
                         </div>
 
                     </div>
