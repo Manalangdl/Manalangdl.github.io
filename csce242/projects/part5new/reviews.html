@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
 
-    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="css/reviews.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +13,14 @@
 </head>
 <body>
     <div>
-         <header class="navbar flex flex-between">
-            <!-- logo -->
-            <div id="nav-logo">ColaMunchies </div>
+         <header class="navbar flex flex-between flex-column">
+            
 
             <!-- nav bar -->
-            <nav>
+            <nav class="w-100 flex flex-evenly">
+                <!-- logo -->
+                <div id="nav-logo">ColaMunchies</div>
+
                 <ul class="flex nav-list">
                     <a href="#">Home</a>
                     <a href="#">Reviews</a>
@@ -29,16 +31,16 @@
             </nav>
 
             <!-- HERO -->
-            <section class="hero">
+            <section class="hero flex flex-center">
                 <h1>Check Out Fan Favorites</h1>
             </section>
         </header>
 
         <main>
-            <!-- COMMUNITY REVIEWS -->
+            <!-- COMMUNITY REVIEWS/SECT -->
             <section class="review-sect">
                 <div class="container">
-                    <div id="review-h">
+                    <div id="review-h flex flex-between">
                         <h2>FRESH FROM OUR COMMUNITY</h2>
                         <a href="#" class="view-all">View All</a>
                     </div>
@@ -46,7 +48,7 @@
                     <div class="review-grid">
 
                         <!-- REVIEW 1 -->
-                        <div class="review-card">
+                        <div class="review-card flex flex-column">
                             <p class="author">John Regan reviewed
                                 <a href="#">Tacos Locos</a>
                             </p>
@@ -56,8 +58,8 @@
                                 actually want to hang around in. The warm lighting
                                 and colorful” ...
                             </p>
-                            <div class="review-bottom">
-                                <div class="stars">
+                            <div class="review-bottom flex flex-between">
+                                <div class="stars flex">
                                     <span>★</span>
                                     <span>★</span>
                                     <span>★</span>
@@ -81,8 +83,8 @@
                                 almost transported straight from a quiet Tokyo side
                                 street—soft lantern lighting, ” ...
                             </p>
-                            <div class="review-bottom">
-                                <div class="stars">
+                            <div class="review-bottom flex flex-between">
+                                <div class="stars flex">
                                     <span>★</span>
                                     <span>★</span>
                                     <span>★</span>
@@ -105,8 +107,8 @@
                                 I’ve eaten before. It was my first time at a sushi
                                 bar. I was surprised by how fresh and clean” ...
                             </p>
-                            <div class="review-bottom">
-                                <div class="stars">
+                            <div class="review-bottom flex flex-between">
+                                <div class="stars flex">
                                     <span>★</span>
                                     <span>★</span>
                                     <span>★</span>
@@ -124,11 +126,11 @@
                 </div>
             </section>
 
-            <section class="review-sect">
+            <section class="recommend-sect">
                 <div class="container">
                     <h2>Have a Recommended Place?</h2>
 
-                    <div class="form-layout">
+                    <div class="form-layout flex">
 
                         <!-- form -->
                         <div class="form-column">
@@ -136,49 +138,82 @@
                             <div>
                                 <label for="name">Name</label>
                                 <input type="text" id="name" placeholder="Your name">
+
+                                <label for="email">Email</label>
+                                <input type="text" id="email" placeholder="Your email">
+
+                                <label for="restaurant">Restaurant</label>
+                                <input type="text" id="restaurant" placeholder="Name of Restaurant">
+
+                                <label for="review">Review</label>
+                                <textarea id="review" placeholder="Your review..."></textarea>
+
+                                <button type="submit">Submit Review</button>
                             </div>
                         </div>
+
+                        <!-- IMG UPLOAD -->
+                        <div class="upload-column flex flex-column flex-center">
+                            <button type="button" class="img-upload">
+                                <span>+</span>
+                            </button>
+                            <p>Add Image (optional)</p>
+                        </div>
+
+                        <!-- star rating -->
+                        <div class="rating-column flex flex-column flex-center">
+                            <h3>Stars</h3>
+                            <div class="rating-stars flex">
+                            <button type="button">☆</button>
+                            <button type="button">☆</button>
+                            <button type="button">☆</button>
+                            <button type="button">☆</button>
+                            <button type="button">☆</button>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
         </main>
 
-        <footer id="footer" class="flex flex-between">
-            <!-- logo -->
-            <div id="footer-logo">
-                <div id="white-logo">ColaMunchies</div>
+            <footer id="footer" class="flex flex-between">
+                <!-- logo -->
+                <div id="footer-logo" class="flex flex-column flex-between">
+                    <div id="white-logo">ColaMunchies</div>
 
-                <!-- copyright -->
-                <p id="copyright">&copy; 2026 ColaMunchies. All rights reserved.</p>
-            </div>
-            <!-- socials -->
-            <div class="footer-sect">
-                <h3>Follow Along</h3>
-
-                <div class="flex social-links">
-
-                    <!-- TODO: ADD IMGS -->
-                    <a href="#"><img src="home-imgs/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="home-imgs/insta.png" alt="Instagram"></a>
-                    <a href="#"><img src="home-imgs/x.png" alt="X"></a>
-                    <a href="#"><img src="home-imgs/youtube.png" alt="YouTube"></a>
-
+                    <!-- copyright -->
+                    <p id="copyright">&copy; 2026 ColaMunchies. All rights reserved.</p>
                 </div>
-            </div>
+                <!-- socials -->
+                <div class="footer-sect flex flex-between flex-column">
+                    <h3>Follow Along</h3>
 
-            <!-- FOOTER NAV -->
-            <div id="footer-sect">    
-                <ul class="footer-nav">
-                    <a href="#">Home</a>
-                    <a href="#">Reviews</a>
-                    <a href="#">Top Foods</a>
-                    <a href="#">Guide</a>
-                    <a href="#">About</a>
-                </ul>
-            </div>
+                    <div class="flex social-links flex-evenly">
 
-        </footer>
+
+                        <a href="#"><img src="home-imgs/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="home-imgs/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="home-imgs/x.png" alt="X"></a>
+                        <a href="#"><img src="home-imgs/youtube.png" alt="YouTube"></a>
+
+                    </div>
+
+                    <!-- FOOTER NAV -->
+                    <div class="w-100">    
+                        <ul class="footer-nav w-100 flex flex-evenly">
+                            <a href="#">Home</a>
+                            <a href="#">Reviews</a>
+                            <a href="#">Top Foods</a>
+                            <a href="#">Guide</a>
+                            <a href="#">About</a>
+                        </ul>
+                    </div>
+                </div>
+
+            
+
+            </footer>
     </div>
 </body>
 </html>
