@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Picks</title>
     <link rel="stylesheet" href="css/top-picks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
@@ -23,10 +26,10 @@
             </nav>
 
             <!-- hero -->
-            <section >
+            <section id="hero" class="flex flex-between">
 
                 <!-- left-side text -->
-                <div>
+                <div class="hero-left flex flex-column flex-between astart">
 
                     <h1 class="hero-text">Top Picks</h1>
                     <p>What is your go to cuisine? Are you looking for casual or fine-dining? Everyone has different taste buds, but let me help find food just for you!</p>
@@ -34,48 +37,41 @@
                 </div>
                
                 <!-- food img -->
-                <div>
+                <div class="img-div hero-right">
                     <img src="top-picks-imgs/lasagna-hero.png" alt="Lasagna with textbox">
                 </div>
 
             </section>
         </header>
-        
+
         <main>
-            <section>
-                <!-- search container -->
-                <div>
-                    <!-- search bar -->
-                    <div>
-                        <span></span>
-                        <input>
 
-                    </div>
+            <!-- search container -->
+            <section id="inputs" class="flex flex-center flex-column">
+                <!-- search bar -->
+                <div id="search" class="flex flex-between">
+                    <div ></div>
+                    <input type="text" placeholder="Search Recommendations"/>
 
-                    <!-- category dropdown -->
-                    <div>
-                        <span>Browse By Category</span>
-                        <!-- arrow -->
-                        <span></span>
-                    </div>
+                </div>
 
+                <!-- category dropdown -->
+                <div id="dropdown" class="flex flex-between">
+                    <p>Browse By Category</p>
+                    <!-- arrow -->
+                    <p>V</p>
                 </div>
             </section>
 
-            <!-- yellow divider -->
-            <div>
-
-            </div>
-
             <!-- FOOD RECS -->
-            <div>
+            <div id="recs">
 
                 <!-- asian cuisine -->
                 <section>
                     <h2>Asian Cuisine</h2>
 
                     <!-- food grid -->
-                    <div>
+                    <div class="food-grid">
                         <!-- m vista -->
                         <a href="#">
                             <div>
@@ -105,7 +101,7 @@
                 <section>
                     <h2>Latino Cuisine</h2>
                     <!-- food grid -->
-                    <div>
+                    <div class="food-grid">
 
                         <!-- a fuego -->
                         <a href="#">
@@ -137,7 +133,7 @@
                     <h2>Italian Cuisine</h2>
 
                     <!-- food grid -->
-                    <div>
+                    <div class="food-grid">
 
                         <!-- villa tronco -->
                         <a href="#">
