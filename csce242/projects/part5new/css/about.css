@@ -122,24 +122,168 @@ nav{
 }
 
 /* HERO */
+/* hero section */
 #hero{
-    background-color: var(--dark-maroon-h);
-    min-height: 395px;
-    padding:35px 75px;
+    background-color:var(--dark-maroon-h);
+    padding: 24px 80px;
+    min-height: 360px;
+    align-items: center;
+}
+
+/* hero heading */
+#hero h1 {
+    color: white;
+    font-family:"Crimson Text",serif;
+    font-size:38px;
+    line-height: 1.1;
+    margin-bottom:25px;
+    width: 40%;
+}
+
+/* hero sub */
+#hero p{
+    color: white;
+    font-family: "Crimson Text", serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.hero-left, .hero-right{
+    width: 40%;
+    height: 300px;
+}
+
+.hero-left{
+    padding: 8px 0;
+}
+
+.hero-right img{
+    height: 360px !important;
+}
+
+/* WHO WE ARE */
+#who-sect{
+    background-color: var(--cream);
+    min-height:440px;
+    padding:50px 65px;
     gap:70px;
 }
 
-/* left */
-#hero-left{
+/* txt */
+.who-txt{
     width:50%;
-    padding-left: 0;
 }
-#hero-left h1{
-    color:white;
-    font: "Crimson Text",serif;
-    font-size:50px;
+.who-txt h2{
+    color:var(--dark-maroon);
+    font-family: "Crimson Text",serif;
+    font-size:40px;
+    margin-bottom:60px;
+}
+.who-txt p{
+    color:black;
+    font-size:25px;
+    line-height: 1.4;
+}
+
+/* IMAGE */
+.who-img{
+    width:40%;
+    height:315px;
+
+    border-radius:5px;
+}
+.who-img img{
+    border: 5px;
+}
+
+/* WHY US */
+#why-sect{
+    background-color: white;
+    padding:125px 0 80px;
+
+    display:flex;
+    justify-content: center;
+}
+
+#why-box{
+    background-color: var(--cream);
+    width:70%;
+
+    padding:35px 70px 40px;
+}
+
+#why-box h2{
+    color:var(--dark-maroon);
+    font-family: "Crimson Text",serif;
+    font-size:40px;
     text-align: center;
-    margin-bottom:30px;
+
+    margin-bottom: 25px;
+}
+#why-box p{
+    /* color: black; */
+    font-size:20px;
+    line-height: 1.4;
+}
+
+/* WHERE TO START */
+#where-sect{
+    background-color: white;
+    padding:0 70px 125px;
+}
+
+#where-sect h2{
+    color:var(--dark-maroon);
+    font-family: "Crimson Text",serif;
+    font-size: 40px;
+    text-align:center;
+
+    margin-bottom:50px;
+}
+
+/* START CARDS */
+/* fix */
+.start-grid{
+    display:grid;
+    gap:65px;
+}
+
+.start-card{
+    background-color: var(--cream);
+    min-height: 310px;
+    padding:28px 30px;
+
+    position:relative;
+    text-decoration: none;
+}
+
+/* card heading */
+.start-card h3{
+    color:var(--dark-maroon);
+    font-family: "Crimson Text",serif;
+    font-size:34px;
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+/* card txt */
+.start-card p{
+    font-size:20px;
+    line-height: 1.2;
+}
+
+/* arrow */
+.start-card span{
+    color:var(--bright-pink);
+    font-size:42px;
+    position: absolute;
+    bottom:15px;
+
+    /* aligns arrow to middle */
+    left:50%;
+    transform:translateX(-50%)
 }
 
 
