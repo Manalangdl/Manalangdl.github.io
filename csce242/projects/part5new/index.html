@@ -39,8 +39,8 @@
 
                     <!-- hero buttons -->
                     <div class="flex hero-btns">
-                        <a href="#" class="pink-btn">Explore Reviews →</a>
-                        <a href="#" class="contact-btn">Contact Us</a>
+                        <a href="reviews.html" class="pink-btn">Explore Reviews →</a>
+                        <a href="about.html" class="contact-btn">Contact Us</a>
                     </div>
                 </div>
                
@@ -82,7 +82,7 @@
 
                     <!-- food card 2: menkoi -->
                     <div class="food-card">
-                        <div class="food-img img-div">
+                        <div class="food-img img-div menkoi">
                             <img src="home-imgs/ramen-circ.png" alt="Bowl of ramen">
                         </div>
 
@@ -133,7 +133,7 @@
                         
                        <h3>Restaurant Reviews</h3>
                        <p>Follow along our community and their experiences.</p>
-                       <a href="#" class="pink-btn">View Reviews →</a>
+                       <a href="reviews.html" class="pink-btn">View Reviews →</a>
                     </div>
 
                     <!-- RIGHT -->
@@ -144,7 +144,7 @@
                         
                         <h3>Best Eats</h3>
                         <p>Check out my top picks by category.</p>
-                        <a href="#" class="pink-btn">Try Next →</a>
+                        <a href="top-picks.html" class="pink-btn">Try Next →</a>
                     </div>
 
                 </div>
@@ -164,17 +164,24 @@
                     <!-- restaurant list -->
                     <div class="restaurant-list flex flex-column">
 
-                        <button class="restaurant">1. Backstreets Grill | Devine St.</button>
+                        <button class="restaurant"
+                                onclick="document.querySelector('#home-map iframe').src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4126.099790660778!2d-81.0130285235343!3d33.99841477317718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb634b093669%3A0x4a6c05c85edd7449!2sBackstreets%20Grill!5e1!3m2!1sen!2sus!4v1791135711139!5m2!1sen!2sus'"
+                        >1. Backstreets Grill | Devine St.</button>
                         
-                        <button class="restaurant">2. JJ's Teahouse | Blossom St.</button>
+                        <button class="restaurant"
+                                onclick="document.querySelector('#home-map iframe').src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.9272916396858!2d-81.03095133668764!3d33.993254480706554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bbb9635f461d%3A0x3afd315120b7099a!2sJJ%20Tea%20House!5e1!3m2!1sen!2sus!4v1791135855659!5m2!1sen!2sus'"
+                        >2. JJ's Teahouse | Blossom St.</button>
 
-                        <button class="restaurant">3. Dano's Pizza | Rosewood Dr.</button>
+                        <button class="restaurant"
+                                onclick="document.querySelector('#home-map iframe').src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.8731567810938!2d-81.00079546201738!3d33.98798681333653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bab97a465fcb%3A0xd0e7fd59bd4319bb!2sDano\'s%20Pizza!5e1!3m2!1sen!2sus!4v1791136101332!5m2!1sen!2sus'">
+                         3. Dano's Pizza | Rosewood Dr.
+                        </button>
 
                     </div>
 
                     <!-- map -->
                     <div id="home-map">
-                        <img src="home-imgs/map.png" alt="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4126.099790660778!2d-81.0130285235343!3d33.99841477317718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb634b093669%3A0x4a6c05c85edd7449!2sBackstreets%20Grill!5e1!3m2!1sen!2sus!4v1791135711139!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
 
                 </div>
@@ -186,7 +193,7 @@
                 <h2>Made for all Food Lovers</h2>
                 <p>Cola Munchies is dedicated to satisfying your craving and curiosity. We are here to help you explore various cuisines, finding local sit-down restaurants, quick bites, and overall quality experiences.</p>
             
-                <a href="#" class="pink-btn">Find out More →</a>
+                <a href="about.html" class="pink-btn">Find out More →</a>
             </section>
         
         </main>
