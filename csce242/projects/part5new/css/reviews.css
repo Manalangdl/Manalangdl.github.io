@@ -93,14 +93,18 @@ header, main, footer {
 
 
 /* NAVIGATION */
+header{
+    gap:0 !important;
+}
+
 nav{
-    min-height: 78px;
+    height: 78px;
     padding: 0 80px;
     background-color: white;
 }
 .navbar{
     width: 100%;
-    height: 77px;
+    height: 100%;
     background-color: white;
 }
 
@@ -137,6 +141,8 @@ header{
     max-width: 1360px;
     margin:0 auto;
     min-height: 300px;
+    justify-content: start;
+    align-items: center;
 }
 .hero{
     width:100%;
