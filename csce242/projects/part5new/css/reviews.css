@@ -10,6 +10,7 @@
 
 
     --dark-gray:rgba(58, 58, 58, 1);
+    --gray:rgb(155, 155, 155);
     --light-gray:rgba(217, 217, 217, 1);
 
     --bright-yellow:rgba(255, 241, 169, 1);
@@ -223,7 +224,7 @@ header{
     margin-bottom:5px;
     color:var(--gold) !important;
     font-size: 18px;
-    /* letter-spacing: */
+
 }
 
 /* ADD REVIEW */
@@ -303,7 +304,7 @@ header{
 .img-upload{
     width:180px;
     height: 180px;
-    border:2px solid var(--dark-gray);
+    border:2px solid var(--gray);
     background-color: var(--light-gray);
     display: grid;
     place-items:center;
@@ -313,7 +314,7 @@ header{
 .img-upload span{
     font-size: 48px;
     font-weight: 200;
-    color:var(--dark-gray);
+    color:var(--gray);
     line-height: 1;
 }
 
@@ -327,6 +328,11 @@ header{
 
 .rating-stars{
     gap: 4px;
+}
+
+#star-h{
+    font-weight: 500;
+
 }
 
 /* TYPOGRAPHY */
