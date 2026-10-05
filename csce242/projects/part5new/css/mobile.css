@@ -14,6 +14,10 @@
     --cream:rgba(255, 248, 235, 1);
 }
 
+ul{
+    list-style: none;
+}
+
 /* mobile menu */
 .mb{
     visibility: hidden;
@@ -64,6 +68,7 @@ aside ul li {
 }
 
 
+
 @media (max-width: 600px) {
 
     .flex{
@@ -112,4 +117,20 @@ aside ul li {
         justify-content: start;
         flex-direction: column;
     }
+
+    #footer-logo, #footer-sect, .footer-sect{
+        width: 100%;
+    }
+
+    .social-links{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #footer ul {
+        display: none;
+    }
+
+
 }

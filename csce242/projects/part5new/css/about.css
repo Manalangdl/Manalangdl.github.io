@@ -371,3 +371,31 @@ a{
     text-decoration:none;
     color: inherit;
 }
+
+@media (max-width: 600px){
+
+    #hero{
+        padding: 64px 32px;
+    }
+
+    #who-sect{
+        padding: 24px 8px;
+    }
+
+    .who-img{
+        padding: 0 16px;
+    }
+
+    #why-box{
+        padding: 35px 24px 40px;
+    }
+
+    .start-grid{
+        flex-direction: column;
+    }
+
+    .start-card{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}

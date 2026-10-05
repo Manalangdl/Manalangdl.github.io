@@ -188,7 +188,7 @@ header{
 /* review cards */
 .review-grid{
     gap:32px;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .review-grid.max{
@@ -289,6 +289,7 @@ header{
 .form label{
     margin: 0 0 4px 8px;
     font-size: 12px;
+    font-family:"Inter",sans-serif !important;
 }
 
 .form input, .form textarea{
@@ -300,6 +301,7 @@ header{
     padding: 10px 15px;
     font-size: 12px;
     margin-bottom: 10px;
+    font-family:"Inter",sans-serif !important;
 }
 
 
@@ -459,4 +461,5 @@ ul{
     #submit{
         margin: 0 auto;
     }
+
 }
