@@ -143,11 +143,12 @@ header{
 /* MAIN */
 main{
     padding: 0 48px;
+    column-gap: 128px;
 }
 
 .card{
     height: 220px;
-    width: calc(25% - 12px);
+    width: calc(25% - 48px);
     color: whitesmoke;
     border-radius: 12px;
     overflow: hidden;
