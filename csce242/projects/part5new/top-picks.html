@@ -57,19 +57,22 @@
 
                 <!-- category dropdown -->
                 <div id="dropdown" class="flex flex-column">
-                    <div class="flex flex-between browse">
-                        <p>Browse By Category</p>
+                    <div class="flex flex-between browse"
+                         onclick="document.getElementById('menu').classList.toggle('hidden')"
+                    >
+                        <p id="menuText">Browse By Category</p>
                         <!-- arrow -->
                         <p>V</p>
                     </div>
                     
 
-                    <div id="menu" class="flex flex-column astart">
-                        <div class="">Asian</div>
-                        <div class="">Latino</div>
-                        <div class="">Italian</div>
-                        <div class="">Southern</div>
-                        <div class="">Budget</div>
+                    <div id="menu" class="flex flex-column astart hidden">
+                        <div>All</div>
+                        <div>Asian</div>
+                        <div>Latino</div>
+                        <div>Italian</div>
+                        <div>Southern</div>
+                        <div>Budget</div>
                     </div>
                 </div>
             </section>
@@ -78,7 +81,7 @@
             <div id="recs">
 
                 <!-- asian cuisine -->
-                <section>
+                <section id="Asian">
                     <h2>Asian Cuisine</h2>
 
                     <!-- food grid -->
@@ -109,7 +112,7 @@
                 </section>
 
                 <!-- latino cuisine -->
-                <section>
+                <section id="Latino">
                     <h2>Latino Cuisine</h2>
                     <!-- food grid -->
                     <div class="food-grid">
@@ -140,7 +143,7 @@
                 </section>
 
                 <!-- italian cuisine -->
-                <section>
+                <section id="Italian">
                     <h2>Italian Cuisine</h2>
 
                     <!-- food grid -->
@@ -215,4 +218,5 @@
 
     </div>
 </body>
+<script src="scripts/toppicks.js"></script>
 </html>

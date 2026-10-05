@@ -188,9 +188,16 @@ header{
 /* review cards */
 .review-grid{
     gap:32px;
+    flex-direction: row-reverse;
 }
+
+.review-grid.max{
+    max-height: 360px;
+    overflow-y: hidden;
+}
+
 .review-card{
-    width: 240px;
+    width: calc((100% / 3) - 128px );
     height:360px;
 
     border:2px solid black;
