@@ -94,7 +94,7 @@ const entries = [
     new Review(
         "John Regan",
         "Tacos Locos",
-        "\“Tacos Locos nails that perfect blend of lively energy and laid-back comfort, making it a spot you actually want to hang around in. The warm lighting and colorful\” ...",
+        "Tacos Locos nails that perfect blend of lively energy and laid-back comfort, making it a spot you actually want to hang around in. The warm lighting and colorful ...",
         4,
         new Date(2026, 8, 13),
         "https://www.yelp.com/biz/tacos-loco-and-grill-west-columbia"
@@ -103,7 +103,7 @@ const entries = [
     new Review(
         "Lindsay Manalang",
         "Inakaya",
-        "\“Inakaya delivers the kind of atmosphere that feels almost transported straight from a quiet Tokyo side street—soft lantern lighting,\” ...",
+        "Inakaya delivers the kind of atmosphere that feels almost transported straight from a quiet Tokyo side street—soft lantern lighting, ...",
         5,
         new Date(2026, 8, 11),
         "https://inakayasushi.com/"
@@ -112,7 +112,7 @@ const entries = [
     new Review(
         "Jacqueline Nguyen",
         "Inakaya",
-        "\“This palce felt completely different from any place I’ve eaten before. It was my first time at a sushi bar. I was surprised by how fresh and clean\” ...",
+        "This palce felt completely different from any place I’ve eaten before. It was my first time at a sushi bar. I was surprised by how fresh and clean ...",
         5,
         new Date(2026, 7, 3),
         "https://inakayasushi.com/"
@@ -121,7 +121,7 @@ const entries = [
     new Review(
         "Courtney Thomas",
         "Cava",
-        "\"I think Cava is a decent option when I want something quick and healthier than typical fast food. The ingredients are fresh and there are plenty of choices\" ...",
+        "I think Cava is a decent option when I want something quick and healthier than typical fast food. The ingredients are fresh and there are plenty of choices ...",
         3,
         new Date(2026, 6, 28),
         "https://cava.com/"
@@ -130,7 +130,7 @@ const entries = [
     new Review(
         "Ashlynn Weaver",
         "Saluda's Restaurant",
-        "\"The atmosphere feels upscale and is great for special occasions. Food was well-prepared and the service was friendly. It's definitely a solid choice for dinner in Five Points\" ...",
+        "The atmosphere feels upscale and is great for special occasions. Food was well-prepared and the service was friendly. It's definitely a solid choice for dinner in Five Points ...",
         4,
         new Date(2026, 4, 20),
         "https://www.saludas.com/"
