@@ -5,22 +5,71 @@
     <title>ColaMunchies | Guide</title>
 
     <link rel="stylesheet" href="css/guide.css">
-
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Nav menu -->
+    <aside class="closed">
+
+        <ul class="flex column evenly fs-24">
+            <h1>ColaMunchies</h1>
+            <a href="index.html"><li>Home</li></a>
+            <a href="reviews.html"><li>Reviews</li></a>
+            <a href="top-picks.html"><li>Top-picks</li></a>
+            <a href="guide.html"><li>Guide</li></a>
+            <a href="about.html"><li>About</li></a>
+        </ul>
+    </aside>
     <div>
+        <div id="modal">
+
+            <div id="modal-content" class="flex flex-column flex-evenly">
+
+                <!-- exit button -->
+                <button class="exit"
+                        onclick="document.querySelector('#modal').classList.toggle('hidden')"
+                >X</button>
+
+                <h1 class="title"></h1>
+
+                <!-- iframe -->
+                <div class="frame-div">
+                    
+                </div>
+
+                <!-- options -->
+                <div class="options flex flex-evenly w-100">
+                    <button value="option1"></button>
+                    <button value="option2"></button>
+                    <button value="option3"></button>
+                </div>
+            </div>
+        </div>
+
         <header class="navbar flex flex-between flex-column w-100">
             
 
             <!-- nav bar -->
-            <nav class="w-100 flex flex-between">
+            <nav class="w-100 flex flex-between no-col">
                 <!-- logo -->
                 <div id="nav-logo">ColaMunchies</div>
 
-                <ul class="flex nav-list">
+                <svg id="hamburger" class="mb" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_429_11066)">
+                        <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="var(--yellow)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_429_11066">
+                            <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <ul class="flex nav-list hiddenmb">
                     <a href="index.html">Home</a>
                     <a href="reviews.html">Reviews</a>
                     <a href="top-picks.html">Top Picks</a>
@@ -38,9 +87,8 @@
         <main>
             <!-- INTRO -->
             <section id="intro">
-                <div id="intro-box">
+                <div id="intro-box" class="mb-w-100">
                     <p>Whether you are stopping by Columbia or want to venture to nearby places, we have you covered.</p>
-
                 </div>
 
             </section>
@@ -147,4 +195,5 @@
         </footer>
     </div>
 </body>
+<script src="scripts/nav.js"></script>
 </html>

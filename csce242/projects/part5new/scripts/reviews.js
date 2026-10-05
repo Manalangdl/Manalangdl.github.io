@@ -15,6 +15,7 @@ class Review{
 
         const review = document.createElement("div");
         review.classList.add("review-card");
+        review.classList.add("mb-w-100");
 
         review.append(this.top());
         review.append(this.bottom());

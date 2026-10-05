@@ -490,3 +490,28 @@ a{
 ul{
     list-style:none;
 }
+
+@media (max-width: 600px) {
+    #hero{
+        padding: 35px 32px !important;
+    }
+
+    nav{
+        padding: 8px 16px !important;
+        justify-content: space-between !important;
+        width: 100%;
+    }
+
+    .food-cards{
+        gap: 60px !important;
+    }
+
+    .guide-container{
+        flex-direction: column-reverse !important;
+        gap: 24px;
+    }
+
+    #about{
+        padding: 64px 0;
+    }
+}

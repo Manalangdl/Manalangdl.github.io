@@ -4,21 +4,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColaMunchies</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/mobile.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Nav menu -->
+    <aside class="closed">
+
+        <ul class="flex column evenly fs-24">
+            <h1>ColaMunchies</h1>
+            <a href="index.html"><li>Home</li></a>
+            <a href="reviews.html"><li>Reviews</li></a>
+            <a href="top-picks.html"><li>Top-picks</li></a>
+            <a href="guide.html"><li>Guide</li></a>
+            <a href="about.html"><li>About</li></a>
+        </ul>
+    </aside>
     <div>
         <header class="flex flex-column flex-between">
             
             <!-- nav bar -->
-            <nav class="flex flex-between px-80">
+            <nav class="flex flex-between px-80 no-col">
                 <div id="nav-logo">ColaMunchies </div>
 
-                <ul class="flex nav-list">
+                <svg id="hamburger" class="mb" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_429_11066)">
+                        <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="var(--yellow)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_429_11066">
+                            <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <ul class="flex nav-list hiddenmb">
                     <a href="index.html">Home</a>
                     <a href="reviews.html">Reviews</a>
                     <a href="top-picks.html">Top Picks</a>
@@ -31,21 +55,21 @@
             <section id="hero" class="flex flex-between w-100">
 
                 <!-- left-side text -->
-                <div id="hero-left" class="flex flex-column h-100 flex-evenly astart">
+                <div id="hero-left" class="flex flex-column h-100 flex-evenly astart mb-w-100">
 
-                    <h1 class="hero-text">Food tailored for the best taste buds</h1>
-                    <p class="hero-text">Local foods. Columbia, SC</p>
+                    <h1 class="hero-text mb-w-100">Food tailored for the best taste buds</h1>
+                    <p class="hero-text mb-w-100">Local foods. Columbia, SC</p>
                     
 
                     <!-- hero buttons -->
-                    <div class="flex hero-btns">
+                    <div class="flex hero-btns mb-w-100 no-col">
                         <a href="reviews.html" class="pink-btn">Explore Reviews →</a>
                         <a href="about.html" class="contact-btn">Contact Us</a>
                     </div>
                 </div>
                
                 <!-- food img -->
-                <div class="hero-img img-div">
+                <div class="hero-img img-div mb-w-100">
                     <img src="home-imgs/hero1.png" alt="Food Spread">
                 </div>
 
@@ -126,8 +150,8 @@
                 <div class="flex spot-container flex flex-evenly">
 
                     <!-- LEFT -->
-                    <div class="spot-card flex flex-column flex-evenly">
-                        <div class="img-div">
+                    <div class="spot-card flex flex-column flex-evenly mb-w-100">
+                        <div class="img-div mb-w-100">
                             <img src="home-imgs/home-review.png" alt="Reviews">
                         </div>
                         
@@ -137,8 +161,8 @@
                     </div>
 
                     <!-- RIGHT -->
-                    <div class="spot-card flex flex-column flex-evenly">
-                        <div class="img-div">
+                    <div class="spot-card flex flex-column flex-evenly mb-w-100">
+                        <div class="img-div mb-w-100">
                             <img src="home-imgs/home-eats.png" alt="Pizza">
                         </div>
                         
@@ -236,4 +260,5 @@
         </footer>
     </div>
 </body>
+<script src="scripts/nav.js"></script>
 </html>

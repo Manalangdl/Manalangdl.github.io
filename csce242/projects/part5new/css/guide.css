@@ -69,6 +69,78 @@ header,main,footer{
     padding-right: 80px;
 }
 
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+/* MODAL */
+#modal{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: rgba(0 ,0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 12;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-content{
+    height: 80vh;
+    width: 80vw;
+    box-shadow: 0px 4px 8px var(--dark-maroon);
+    background: var(--dark-maroon-h);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 64px;
+    position: relative;
+}
+
+.exit{
+    position: absolute;
+    right: 8%;
+    top: 8%;
+    cursor: pointer;
+    font-size: 32px;
+    background-color: inherit;
+    border: 0;
+    color: white;
+}
+
+.frame-div{
+    height: 70%;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.frame-div iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.options{
+    height: 64px;
+}
+
+.options button{
+    height: 100%;
+    width: calc((100% / 3) - 22px);
+    background-color: var(--yellow);
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 12px;
+    text-align: start;
+}
+
+
 /* NAVIGATION */
 nav{
     width:100%;
@@ -307,4 +379,25 @@ main{
 a{
     /* underline remove */
     text-decoration:none;
+}
+
+
+@media (max-width: 600px) {
+
+    .options button{
+        width: 100%;
+        height: 24px;
+        font-size: 18px;
+    
+    }
+
+    #modal .frame-div{
+        
+        height: 40%;
+        width: 100%;
+    }
+
+    .exit{
+        top: 4%;
+    }
 }

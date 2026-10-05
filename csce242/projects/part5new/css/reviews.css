@@ -453,3 +453,10 @@ a{
 ul{
     list-style:none;
 }
+
+@media (max-width: 600px) {
+
+    #submit{
+        margin: 0 auto;
+    }
+}

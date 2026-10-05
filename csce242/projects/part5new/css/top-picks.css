@@ -209,7 +209,7 @@ nav{
 
 #dropdown{
     padding: 0 24px;
-    font-size: 32px;
+    font-size: 24px;
     width: 50%;
     cursor: pointer;
 }
@@ -365,4 +365,23 @@ a{
 
 ul{
     list-style:none;
+}
+
+@media (max-width: 600px) {
+    .food-grid{
+        flex-direction: column;
+    }
+
+    #hero{
+        padding: 64px;
+    }
+
+
+    #inputs{
+        padding: 18px 16px;
+    }
+
+    #recs section a{
+        margin-bottom: 12px;
+    }
 }
