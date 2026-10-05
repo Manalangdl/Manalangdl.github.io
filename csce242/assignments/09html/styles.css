@@ -183,6 +183,10 @@ main{
 }
 
 /* TYPOGRAPHY */
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .fs-24{
     font-size: 24px;
 }
