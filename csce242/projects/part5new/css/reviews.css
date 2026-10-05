@@ -241,6 +241,14 @@ header{
 
 }
 
+#submit{
+    cursor: pointer;
+}
+
+.rating-stars button{
+    color: var(--gold);
+}
+
 /* ADD REVIEW */
 .recommend-sect{
     padding:45px 0 60px;

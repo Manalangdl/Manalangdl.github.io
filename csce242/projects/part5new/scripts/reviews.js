@@ -10,6 +10,7 @@ class Review{
         this.date = date;
     }
 
+    // overall review 
     get item(){
 
         const review = document.createElement("div");
@@ -21,6 +22,7 @@ class Review{
         return review;
     }
 
+    // author and text of the review
     top(){
 
         const topSection = document.createElement("div");
@@ -39,6 +41,7 @@ class Review{
         return topSection;
     }
 
+    // the bottom half of the reviews
     bottom(){
 
         const bottomSection = document.createElement("div");
@@ -56,6 +59,7 @@ class Review{
         return bottomSection;
     }
 
+    // the stars section in the review
     stars() {
 
         const starDiv = document.createElement("div");
@@ -80,8 +84,10 @@ class Review{
     }
 }
 
+// Where the reviews are
 const reviews = document.querySelector(".review-grid");
 
+// List of preloaded entries
 const entries = [
 
     new Review("John Regan", "Tacos Locos", "\“Tacos Locos nails that perfect blend of lively energy and laid-back comfort, making it a spot you actually want to hang around in. The warm lighting and colorful\” ...", 4, new Date(2026, 8, 13)),
@@ -89,7 +95,56 @@ const entries = [
     new Review("Jacqueline Nguyen","Inakaya","\“This palce felt completely different from any place I’ve eaten before. It was my first time at a sushi bar. I was surprised by how fresh and clean\” ...",5,new Date(2026,7,3))
 ]
 
+// Add the entries to the homepage
 entries.forEach( (entry) => {
 
     reviews.append(entry.item);
 })
+
+// Input section to submit
+
+// Selecting how many stars the user inputted
+let stars = 0;
+
+const starBtns = document.querySelectorAll(".rating-stars button");
+
+starBtns.forEach((btn) => {
+
+    btn.onclick = (e) => {
+
+        for (let i = 0; i < 5; i++) {
+  
+            starBtns[i].innerHTML = i < btn.value ? "★" : "☆";
+            
+        }
+
+        stars = btn.value;
+    }
+})
+
+// Submission for review
+const submit = document.querySelector("#submit");
+const namee = document.querySelector("#name");
+const restaurant = document.querySelector("#restaurant");
+const review = document.querySelector("#review");
+
+submit.onclick = () => {
+
+    // If there is nothing in these, then the review can't be made
+    if (namee.value == "" || restaurant.value == "" || review.value == "") {
+        return;
+    }
+
+    const newReview = new Review(namee.value, restaurant.value, review.value, stars, new Date);
+    reviews.append(newReview.item);
+
+    namee.value = "";
+    restaurant.value = "";
+    review.value = "";
+    
+    starBtns.forEach((btn) => {
+        btn.innerHTML = "☆";
+    })
+
+    stars = 0;
+}
