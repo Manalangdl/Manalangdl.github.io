@@ -8,7 +8,8 @@
         "month": 8,
         "day": 13,
         "year": 2026,
-        "link": "https://www.yelp.com/biz/tacos-loco-and-grill-west-columbia"
+        "link": "https://www.yelp.com/biz/tacos-loco-and-grill-west-columbia",
+        "src": "review-imgs/tacos.png"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "month": 8,
         "day": 11,
         "year": 2026,
-        "link": "https://inakayasushi.com/"
+        "link": "https://inakayasushi.com/",
+        "src": "review-imgs/ramen.png"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "month": 7,
         "day": 3,
         "year": 2026,
-        "link": "https://inakayasushi.com/"
+        "link": "https://inakayasushi.com/",
+        "src": "review-imgs/sushi.png"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "month": 6,
         "day": 28,
         "year": 2026,
-        "link": "https://cava.com/"
+        "link": "https://cava.com/",
+        "src": "review-imgs/cava.png"
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "month": 4,
         "day": 20,
         "year": 2026,
-        "link": "https://www.saludas.com/"
+        "link": "https://www.saludas.com/",
+        "src": "review-imgs/saludas.png"
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "month": 3,
         "day": 7,
         "year": 2026,
-        "link": "https://www.backstreetsgrill.com/"
+        "link": "https://www.backstreetsgrill.com/",
+        "src": "review-imgs/backstreet.png"
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
         "month": 3,
         "day": 1,
         "year": 2026,
-        "link": "https://tiossc.com/"
+        "link": "https://tiossc.com/",
+        "src": "review-imgs/tios.png"
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
         "month": 2,
         "day": 21,
         "year": 2026,
-        "link": "https://www.lizardsthicket.com/"
+        "link": "https://www.lizardsthicket.com/",
+        "src": "review-imgs/lizards.png"
     }
     
 ]
