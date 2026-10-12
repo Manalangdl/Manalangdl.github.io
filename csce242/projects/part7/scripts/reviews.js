@@ -1,14 +1,15 @@
 // Class for the reviews excluding images
 class Review{
 
-    constructor(author, restaurant, review, star, date = new Date(), link = "#") {
+    constructor(author, restaurant, review, star, date = new Date(), link = "#", src="#") {
 
         this.author = author;
         this.restaurant = restaurant;
         this.review = review;
         this.star = star;
         this.date = date;
-        this.link = link
+        this.link = link;
+        this.src = src;
     }
 
     // overall review 
@@ -33,11 +34,21 @@ class Review{
         author.classList.add("author");
         author.innerHTML = this.author + " reviewed <a href=\"" + this.link + "\" target=\"_blank\"> " + this.restaurant + "</a>";
 
+        const imgDiv = document.createElement("div")
+        imgDiv.classList.add("img-div");
+
+        const img = document.createElement("img");
+        img.src = this.src;
+        img.alt = "Image is not found"
+        imgDiv.append(img);
+
+
         const text = document.createElement("p");
         text.classList.add("review-txt");
         text.innerHTML = "\"" + this.review + "\"";
 
         topSection.append(author)
+        topSection.append(imgDiv)
         topSection.append(text)
 
         return topSection;
@@ -159,7 +170,9 @@ const loadReviews = async () => {
 
     reviewList.forEach( review => {
 
-        let newReview = (new Review(review.name, review.restaurant, review.review, review.stars, new Date(review.year, review.month, review.day), review.link).item);
+        console.log(review.src)
+
+        let newReview = (new Review(review.name, review.restaurant, review.review, review.stars, new Date(review.year, review.month, review.day), review.link, review.src).item);
         reviews.append(newReview);
     })
 }

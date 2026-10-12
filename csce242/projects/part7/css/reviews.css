@@ -192,13 +192,18 @@ header{
 }
 
 .review-grid.max{
-    max-height: 360px;
+    max-height: 380px;
     overflow-y: hidden;
+}
+
+.review-card .img-div{
+    height: 130px;
+    width: 100%;
 }
 
 .review-card{
     width: calc((100% / 3) - 128px );
-    height:360px;
+    height:380px;
 
     border:2px solid black;
     border-radius: 7px;
