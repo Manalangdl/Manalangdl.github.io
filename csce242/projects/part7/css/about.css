@@ -301,6 +301,7 @@ nav{
   padding: 48px 16px;
   background: var(--cream);
   margin-bottom: 8px;
+  font-family:"Inter",sans-serif;
 }
 
 .contact-title {
@@ -308,6 +309,7 @@ nav{
   line-height: 36px;
   font-weight: 700;
   color: var(--dark-maroon-h);
+  font-family:"Crimson Text",serif;
 }
 
 .contact-description {
