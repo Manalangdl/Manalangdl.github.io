@@ -137,11 +137,40 @@ const entries = [
     )
 ];
 
-// Add the entries to the homepage
-entries.forEach( (entry) => {
+// request for the json file
+const getReviews = async () => {
 
-    reviews.append(entry.item);
-})
+    const url = "https://manalangdl.github.io/csce242/projects/part7/reviews.json";
+
+    try {
+
+        const response = await fetch(url);
+        return await response.json();
+    } 
+    catch (error) {
+
+        console.log(error);
+    }
+}
+
+const loadReviews = async () => {
+
+    let reviewList = await getReviews();
+
+    reviewList.forEach( review => {
+
+        let newReview = (new Review(review.name, review.restaurant, review.review, review.stars, new Date(review.year, review.month, review.day), review.link).item);
+        reviews.append(newReview);
+    })
+}
+
+loadReviews();
+
+// Add the entries to the homepage
+// entries.forEach( (entry) => {
+
+//     reviews.append(entry.item);
+// })
 
 // Input section to submit
 
