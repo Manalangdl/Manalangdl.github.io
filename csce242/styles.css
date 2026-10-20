@@ -12,6 +12,14 @@ body{
     font-size: 20px;
 }
 
+.liveAPI{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30%;
+    box-sizing: border-box;
+}
+
 
 /* alignment for the h1,h2 */
 header{
